@@ -1,0 +1,45 @@
+namespace WebUI.Models
+{
+    public class Customers
+    {
+        public Customers()
+        {
+            Qnas = new HashSet<Qnas>();
+            Receipts = new HashSet<Receipts>();
+        }
+        [Key]
+        [Display(Name = "Customer ID")]
+        public int customerID { get; set; }
+        [Display(Name = "First Name")]
+		        
+        public virtual ICollection<Qnas> Qnas { get; set; }
+        public virtual ICollection<Receipts> Receipts { get; set; }
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    /*background-color: #ddd;*/
+    color: rgb(241, 125, 10);
+    text-shadow: 1px 1px #111;
+    background-image: url('../images/bg.jpg');
+    background-repeat: repeat-x;
+    font-family: 'Roboto Slab', serif;
+}
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"]
+{
+    width: 100%;
+}
+--ConfigureServices
+services.AddMvc();
+services.AddDistributedMemoryCache(); // Adds a default in-memory implementation of IDistributedCache
+services.AddSession();
+--Configure
+app.UseSession();
+-- project.json
+"Microsoft.AspNetCore.Session": "1.0.0",
+
+Context.Session.GetString("Login") == "OK"
+
+HttpContext.Session.SetString("Login", "OK");
+HttpContext.Session.SetString("LoginName", "Yoonsuk");

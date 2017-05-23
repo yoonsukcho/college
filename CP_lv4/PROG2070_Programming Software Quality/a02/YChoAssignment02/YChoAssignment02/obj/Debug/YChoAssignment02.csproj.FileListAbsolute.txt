@@ -1,0 +1,6 @@
+G:\CP_lv4\PROG2070_Programming Software Quality\a02\YChoAssignment02\YChoAssignment02\bin\Debug\YChoAssignment02.exe.config
+G:\CP_lv4\PROG2070_Programming Software Quality\a02\YChoAssignment02\YChoAssignment02\bin\Debug\YChoAssignment02.exe
+G:\CP_lv4\PROG2070_Programming Software Quality\a02\YChoAssignment02\YChoAssignment02\bin\Debug\YChoAssignment02.pdb
+G:\CP_lv4\PROG2070_Programming Software Quality\a02\YChoAssignment02\YChoAssignment02\obj\Debug\YChoAssignment02.exe
+G:\CP_lv4\PROG2070_Programming Software Quality\a02\YChoAssignment02\YChoAssignment02\obj\Debug\YChoAssignment02.pdb
+G:\CP_lv4\PROG2070_Programming Software Quality\a02\YChoAssignment02\YChoAssignment02\obj\Debug\YChoAssignment02.csprojResolveAssemblyReference.cache

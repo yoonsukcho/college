@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- PROG2070 – Quality Assurance: Winter 2017 , Assignment 4, Apr. 4, 2017. Yoonsuk Cho #7135551 -->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Assignment 04</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="assignment04.js"></script>
+    <link rel="stylesheet" type="text/css" href="assignment04.css">
+</head>
+<body>
+    <form id="form" name="form" method="POST">
+    <br />
+      <h2>Input seller information</h2>
+        <table id="inputTable">
+            <tr>
+                <td>Seller Name<sup class="man">*</sup></td>
+                <td><input type="text" id="name" name="name" onblur="makeTrim('name');"></td>
+            </tr>
+            <tr>
+                <td>Address<sup class="man">*</sup></td>
+                <td><input type="text" id="address" name="address" maxlength="50" onblur="makeTrim('address');"></td>
+            </tr>
+            <tr>
+                <td>City<sup class="man">*</sup></td>
+                <td><input type="text" id="city" name="city" maxlength="30" onblur="makeTrim('city');"></td>
+            </tr>
+            <tr>
+                <td>Phone number<sup class="man">*</sup></td>
+                <td><input type="text" id="phoneNumber" name="phoneNumber" maxlength="15" ></td>
+            </tr>
+            <tr>
+                <td>Email address<sup class="man">*</sup></td>
+                <td><input type="text" id="email" name="email" maxlength="60" onblur="makeTrim('email');"></td>
+            </tr>
+            <tr>
+                <td>Vehicle make<sup class="man">*</sup></td>
+                <td><input type="text" id="make" name="make" maxlength="50" onblur="makeTrim('make');"></td>
+            </tr>
+            <tr>
+                <td>Vehicle model<sup class="man">*</sup></td>
+                <td><input type="text" id="model" name="model" maxlength="50" onblur="makeTrim('model');"></td>
+            </tr>
+            <tr>
+                <td>Vehicle year<sup class="man">*</sup></td>
+                <td><input type="text" id="year" name="year" maxlength="50" onblur="makeTrim('year');"></td>
+            </tr>		
+        </table>
+      </form>
+    <br />
+    <div id="testBtn" onclick="submitForm();">Save</div>
+    <div id="testBtn2" onclick="moveIndex();">Go Home</div>
+</body>
+</html>

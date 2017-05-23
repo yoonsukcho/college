@@ -1,0 +1,10 @@
+G:\CP_lv4\PROG2070_Programming Software Quality\a03\YChoAssignment03\ProjectC.Tests\bin\Debug\ProjectC.Tests.dll
+G:\CP_lv4\PROG2070_Programming Software Quality\a03\YChoAssignment03\ProjectC.Tests\bin\Debug\ProjectC.Tests.pdb
+G:\CP_lv4\PROG2070_Programming Software Quality\a03\YChoAssignment03\ProjectC.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+G:\CP_lv4\PROG2070_Programming Software Quality\a03\YChoAssignment03\ProjectC.Tests\bin\Debug\nunit.framework.dll
+G:\CP_lv4\PROG2070_Programming Software Quality\a03\YChoAssignment03\ProjectC.Tests\bin\Debug\ProjectC.exe
+G:\CP_lv4\PROG2070_Programming Software Quality\a03\YChoAssignment03\ProjectC.Tests\bin\Debug\ProjectC.pdb
+G:\CP_lv4\PROG2070_Programming Software Quality\a03\YChoAssignment03\ProjectC.Tests\bin\Debug\nunit.framework.xml
+G:\CP_lv4\PROG2070_Programming Software Quality\a03\YChoAssignment03\ProjectC.Tests\obj\Debug\ProjectC.Tests.csprojResolveAssemblyReference.cache
+G:\CP_lv4\PROG2070_Programming Software Quality\a03\YChoAssignment03\ProjectC.Tests\obj\Debug\ProjectC.Tests.dll
+G:\CP_lv4\PROG2070_Programming Software Quality\a03\YChoAssignment03\ProjectC.Tests\obj\Debug\ProjectC.Tests.pdb

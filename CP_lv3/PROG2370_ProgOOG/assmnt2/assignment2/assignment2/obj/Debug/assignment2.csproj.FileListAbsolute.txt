@@ -1,0 +1,28 @@
+G:\CP_lv3\PROG2370_ProgOOG\assmnt2\assignment2\assignment2\bin\Debug\assignment2.exe.config
+G:\CP_lv3\PROG2370_ProgOOG\assmnt2\assignment2\assignment2\bin\Debug\assignment2.exe
+G:\CP_lv3\PROG2370_ProgOOG\assmnt2\assignment2\assignment2\bin\Debug\assignment2.pdb
+G:\CP_lv3\PROG2370_ProgOOG\assmnt2\assignment2\assignment2\obj\Debug\MainWindow.g.cs
+G:\CP_lv3\PROG2370_ProgOOG\assmnt2\assignment2\assignment2\obj\Debug\App.g.cs
+G:\CP_lv3\PROG2370_ProgOOG\assmnt2\assignment2\assignment2\obj\Debug\assignment2_MarkupCompile.cache
+G:\CP_lv3\PROG2370_ProgOOG\assmnt2\assignment2\assignment2\obj\Debug\assignment2_MarkupCompile.lref
+G:\CP_lv3\PROG2370_ProgOOG\assmnt2\assignment2\assignment2\obj\Debug\MainWindow.baml
+G:\CP_lv3\PROG2370_ProgOOG\assmnt2\assignment2\assignment2\obj\Debug\assignment2.g.resources
+G:\CP_lv3\PROG2370_ProgOOG\assmnt2\assignment2\assignment2\obj\Debug\assignment2.Properties.Resources.resources
+G:\CP_lv3\PROG2370_ProgOOG\assmnt2\assignment2\assignment2\obj\Debug\assignment2.csproj.GenerateResource.Cache
+G:\CP_lv3\PROG2370_ProgOOG\assmnt2\assignment2\assignment2\obj\Debug\assignment2.exe
+G:\CP_lv3\PROG2370_ProgOOG\assmnt2\assignment2\assignment2\obj\Debug\assignment2.pdb
+G:\CP_lv3\PROG2370_ProgOOG\assmnt2\assignment2\assignment2\obj\Debug\assignment2.csprojResolveAssemblyReference.cache
+c:\Users\Yoonsuk Cho\Downloads\college\CP_lv3\PROG2370_ProgOOG\assmnt2\assignment2\assignment2\bin\Debug\assignment2.exe.config
+c:\Users\Yoonsuk Cho\Downloads\college\CP_lv3\PROG2370_ProgOOG\assmnt2\assignment2\assignment2\bin\Debug\assignment2.exe
+c:\Users\Yoonsuk Cho\Downloads\college\CP_lv3\PROG2370_ProgOOG\assmnt2\assignment2\assignment2\bin\Debug\assignment2.pdb
+c:\Users\Yoonsuk Cho\Downloads\college\CP_lv3\PROG2370_ProgOOG\assmnt2\assignment2\assignment2\obj\Debug\assignment2.csprojResolveAssemblyReference.cache
+c:\Users\Yoonsuk Cho\Downloads\college\CP_lv3\PROG2370_ProgOOG\assmnt2\assignment2\assignment2\obj\Debug\MainWindow.g.cs
+c:\Users\Yoonsuk Cho\Downloads\college\CP_lv3\PROG2370_ProgOOG\assmnt2\assignment2\assignment2\obj\Debug\App.g.cs
+c:\Users\Yoonsuk Cho\Downloads\college\CP_lv3\PROG2370_ProgOOG\assmnt2\assignment2\assignment2\obj\Debug\assignment2_MarkupCompile.cache
+c:\Users\Yoonsuk Cho\Downloads\college\CP_lv3\PROG2370_ProgOOG\assmnt2\assignment2\assignment2\obj\Debug\assignment2_MarkupCompile.lref
+c:\Users\Yoonsuk Cho\Downloads\college\CP_lv3\PROG2370_ProgOOG\assmnt2\assignment2\assignment2\obj\Debug\MainWindow.baml
+c:\Users\Yoonsuk Cho\Downloads\college\CP_lv3\PROG2370_ProgOOG\assmnt2\assignment2\assignment2\obj\Debug\assignment2.g.resources
+c:\Users\Yoonsuk Cho\Downloads\college\CP_lv3\PROG2370_ProgOOG\assmnt2\assignment2\assignment2\obj\Debug\assignment2.Properties.Resources.resources
+c:\Users\Yoonsuk Cho\Downloads\college\CP_lv3\PROG2370_ProgOOG\assmnt2\assignment2\assignment2\obj\Debug\assignment2.csproj.GenerateResource.Cache
+c:\Users\Yoonsuk Cho\Downloads\college\CP_lv3\PROG2370_ProgOOG\assmnt2\assignment2\assignment2\obj\Debug\assignment2.exe
+c:\Users\Yoonsuk Cho\Downloads\college\CP_lv3\PROG2370_ProgOOG\assmnt2\assignment2\assignment2\obj\Debug\assignment2.pdb

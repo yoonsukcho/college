@@ -1,0 +1,244 @@
+<!--
+Document   : index.html
+Created on : Apr 21, 2017
+
+Author     : Kevin Kim, Yoonsuk Cho
+PROG3180 Final Projrct
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+          charset="UTF-8">
+    <title>Assignment3 in jQuery Mobile</title>
+    <!-- jQuery Library -->
+    <script src="js/lib/jquery-2.1.4.js"></script>
+    <!-- jQuery Mobile library-->
+    <script src="js/lib/jquery.mobile-1.4.5.js"></script>
+    <!--Validation-->
+    <script src="js/lib/jquery.validate.js"></script>
+    <script src="js/lib/additional-methods.min.js"></script>
+
+    <!-- jQuery Mobile style sheet-->
+    <link rel="stylesheet" type="text/css" href="css/lib/jquery.mobile-1.4.5.css">
+    <!-- my using files-->
+    <script src="js/kkycdatabase.js"></script>
+    <script src="js/kkycDAL.js"></script>
+    <script src="js/kkycfacade.js"></script>
+    <script src="js/kkycutil.js"></script>
+    <script src="js/kkyccamera.js"></script>
+    <script src="js/kkycglobal.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/kkycmystyle.css">
+
+
+    <!-- This is what I should add a line!!!-->
+    <script type="text/javascript" src="cordova.js"></script>    
+    
+</head>
+<body>
+
+    <!-- page 1 -->
+    <div data-role="page" id="kkycList">
+        <header data-role="header" data-theme="b" data-position="fixed">
+            <h1>Contacts List</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#kkycList" data-icon="home" data-theme="a" class="ui-btn-active ui-state-persist" >List</a></li>
+                    <li><a href="#kkycAdd" data-icon="plus" data-theme="a">Add</a></li>
+                    <li><a href="#kkycAbout" data-icon="gear" data-theme="a">About</a></li>                    
+                </ul>
+            </div>
+        </header>
+        <section data-role="content">
+
+            <ul data-role="listview" data-inset="true" id="kkycContactList">
+<!--
+                <li data-icon="false">
+                    <a href="#kkycDetail">
+                        <h1>Name: Kevin Kim</h1>
+                        <p>Phone Number: 519-555-5555</p>
+                        <p>Email: reviewer@email.com</p>
+                    </a>
+                </li>
+                <li data-icon="false">
+                    <a href="#kkycDetail">
+                        <h1>Name: Yoonsuk Cho</h1>
+                        <p>Phone Number: 520-555-5555</p>
+                        <p>Email: reviewer2@email.com</p>
+                    </a>
+                </li>
+-->
+            </ul>
+
+        </section>
+        <footer data-role="footer" data-theme="b" data-position="fixed">
+            <h4>&copy; 2017 Kevin Kim, Yoonsuk Cho</h4>
+        </footer>
+    </div>
+
+    <!-- page 2 -->
+    <div data-role="page" id="kkycAdd">
+        <header data-role="header" data-theme="b" data-position="fixed">
+            <h1>Add a Contact</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#kkycList" data-icon="home" data-theme="a">List</a></li>
+                    <li><a href="#kkycAdd" data-icon="plus" data-theme="a" class="ui-btn-active ui-state-persist" >Add</a></li>
+                    <li><a href="#kkycAbout" data-icon="gear" data-theme="a">About</a></li>                    
+                </ul>
+            </div>
+        </header>
+        <section data-role="content">
+            <form action="#" id="kkycAddForm">
+                <label for="kkycName">Name:</label>
+                <input type="text" id="kkycName" name="kkycName">
+                <label for="kkycPhone">Phone:</label>
+                <input type="text" id="kkycPhone" name="kkycPhone">
+                <label for="kkycEmail">Email:</label>
+                <input type="text" id="kkycEmail" name="kkycEmail">
+                <label for="kkycAddress">Address:</label>
+                <input type="text" id="kkycAddress" name="kkycAddress">
+                <label for="kkycCity">City:</label>
+                <input type="text" id="kkycCity" name="kkycCity">
+                <label for="kkycProv">Province:</label>
+                <select name="kkycProv" id="kkycProv">
+                    <option value="1">Other</option>
+                    <option value="2">Canadian</option>
+                </select>
+                <label for="kkycCmt">Comments:</label>
+                <textarea id="kkycCmt" name="kkycCmt"></textarea>
+                <label for="kkycImg">Photo:</label>
+                <img id="kkycImg" name="kkycImg" src="img/unknown.png" width="200px" height="200px"><br>
+                <input type="hidden" id="kkycImageURI" name="kkycImageURI" value="img/unknown.png">
+                <a href="#" data-role="button" id="kkycBtnSave" name="kkycBtnSave" data-inline="true" class="kkycBtnBlue">Save</a>
+            </form>
+        </section>
+        <footer data-role="footer" data-theme="b" data-position="fixed">
+            <h4>&copy; 2017 Kevin Kim, Yoonsuk Cho</h4>
+        </footer>
+    </div>
+    
+    <!-- page 3 -->
+    <div data-role="page" id="kkycDetail">
+        <header data-role="header" data-theme="b" data-position="fixed">
+            <h1>Detail</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#kkycList" data-icon="home" data-theme="a">List</a></li>
+                    <li><a href="#kkycAdd" data-icon="plus" data-theme="a">Add</a></li>
+                    <li><a href="#kkycAbout" data-icon="gear" data-theme="a">About</a></li>                    
+                </ul>
+            </div>
+        </header>
+        <section data-role="content">
+            <form action="#" id="kkycDetailForm">
+                <div data-role="fieldcontain">
+                    <label for="kkycNameD" >Name:</label>
+                    <span id="kkycNameD" name="kkycNameD"></span>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="kkycPhoneD">Phone:</label>
+                    <a href="" id="kkycphoneLink" rel="external"><span id="kkycPhoneD" name="kkycPhoneD"></span></a>
+                </div>
+                    <div data-role="fieldcontain">
+                    <label for="kkycEmailD">Email:</label>
+                    <span id="kkycEmailD" name="kkycEmailD"></span>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="kkycAddressD">Address:</label>
+                    <span id="kkycAddressD" name="kkycAddressD"></span>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="kkycCityD">City:</label>
+                    <span id="kkycCityD" name="kkycCityD"></span>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="kkycProvD">Province:</label>
+                    <span name="kkycProvD" id="kkycProvD"></span>
+                </div>
+                <label for="kkycCmtD">Comments:</label>
+                <textarea id="kkycCmtD" name="kkycCmtD" readonly></textarea>
+                <label for="kkycImgD">Photo:</label>
+                <img id="kkycImgD" name="kkycImgD" src="" width="200px" height="200px"><br>
+                <div data-role="controlgroup" data-type="horizontal">
+                    <a href="#" data-role="button" id="kkycBtnDelete" name="kkycBtnDelete" data-theme="b">Delete</a>
+                    <a href="#" data-role="button" id="kkycBtnModify" name="kkycBtnModify"  data-theme="b" class="kkycBtnBlue">Modify</a>
+                </div>
+            </form>
+        </section>
+        <footer data-role="footer" data-theme="b" data-position="fixed">
+            <h4>&copy; 2017 Kevin Kim, Yoonsuk Cho</h4>
+        </footer>
+    </div>
+
+    <!-- page 4 -->
+    <div data-role="page" id="kkycModify">
+        <header data-role="header" data-theme="b" data-position="fixed">
+            <h1>Modify a Contact</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#kkycList" data-icon="home" data-theme="a">List</a></li>
+                    <li><a href="#kkycAdd" data-icon="plus" data-theme="a">Add</a></li>
+                    <li><a href="#kkycAbout" data-icon="gear" data-theme="a">About</a></li>                    
+                </ul>
+            </div>
+        </header>
+        <section data-role="content">
+            <form action="#" id="kkycModifyForm">
+                <label for="kkycNameM">Name:</label>
+                <input type="text" id="kkycNameM" name="kkycNameM">
+                <label for="kkycPhoneM">Phone:</label>
+                <input type="text" id="kkycPhoneM" name="kkycPhoneM">
+                <label for="kkycEmailM">Email:</label>
+                <input type="text" id="kkycEmailM" name="kkycEmailM">
+                <label for="kkycAddressM">Address:</label>
+                <input type="text" id="kkycAddressM" name="kkycAddressM">
+                <label for="kkycCityM">City:</label>
+                <input type="text" id="kkycCityM" name="kkycCityM">
+                <label for="kkycProvM">Province:</label>
+                <select name="kkycProvM" id="kkycProvM">
+                </select>
+                <label for="kkycCmtM">Comments:</label>
+                <textarea id="kkycCmtM" name="kkycCmtM"></textarea>
+                <label for="kkycImgM">Photo:</label>
+                <img id="kkycImgM" name="kkycImgM" src="" width="200px" height="200px"><br>
+                <input type="hidden" id="kkycImageURIM" name="kkycImageURIM">
+
+                <div data-role="controlgroup" data-type="horizontal">
+                    <a href="#" data-role="button" id="kkycBtnCancelM" name="kkycBtnCancelM"  data-theme="b" >Cancel</a>
+                    <a href="#" data-role="button" id="kkycBtnSaveM" name="kkycBtnSaveM"  data-theme="b" class="ycBtnBlue">Save</a>
+                </div>
+            </form>
+        </section>
+        <footer data-role="footer" data-theme="b" data-position="fixed">
+            <h4>&copy; 2017 Kevin Kim, Yoonsuk Cho</h4>
+        </footer>
+    </div>
+
+    <!-- page 5 -->
+    <div data-role="page" id="kkycAbout">
+        <header data-role="header" data-theme="b" data-position="fixed">
+            <h1>About</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#kkycList" data-icon="home" data-theme="a">List</a></li>
+                    <li><a href="#kkycAdd" data-icon="plus" data-theme="a">Add</a></li>
+                    <li><a href="#kkycAbout" data-icon="gear" data-theme="a" class="ui-btn-active ui-state-persist" >About</a></li>                    
+                </ul>
+            </div>
+        </header>
+        <section data-role="content">
+            <h1>Developer Information</h1>
+            <h3>Yoonsuk Cho</h3>
+            <p>Email: Ycho5551@conestogac.on.ca</p>
+            <p>Phone: 519-729-1890</p><br>
+            <h3>Kevin Kim</h3>
+            <p>Email: kkim8014@conestogac.on.ca</p>
+            <p>Phone: 226-989-6339</p>
+        </section>
+        <footer data-role="footer" data-theme="b" data-position="fixed">
+            <h4>&copy; 2017 Kevin Kim, Yoonsuk Cho</h4>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,207 @@
+/* CSS file for assignment 4, Yoonsuk Cho #7135551 */
+
+
+html {
+	background-color: rgb(189, 189, 189);
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400; 
+	font-size: 14px;
+}
+
+#all_frame {
+	width: 800px;
+	text-align: center;
+	margin: 10px auto; 
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	background-color: rgb(255, 255, 255);
+	padding: 7px 15px 7px 15px;
+}
+
+p 
+{
+	margin: 0 0 0 0;
+}
+
+form {
+	margin: 10px auto; 
+	width: 800px;	
+}
+
+h2 {
+	text-align: center;
+	color: black;	
+}
+
+h2.item_name {
+	float: left;	
+	width: 160px;
+}
+
+img.item_thumb {
+	height: 80px;
+	float: left;	
+}
+
+.div_item_thumb {
+	width: 80px;
+	height: 80px;
+	float: left;	
+}
+
+.div_item_etc {
+	padding-top: 25px;	
+}
+
+h2.item_name {
+	left: 250px;
+	float: left;
+}
+
+select.item_option {
+	vertical-align: middle;
+}
+
+
+div.simpleCart_shelfItem {
+	margin: 5px auto; 
+	width: 550px;	
+	height: 80px;
+	margin: auto; 
+	vertical-align: middle;
+}
+
+input.item_Quantity {
+	width: 35px;
+}
+
+.item-quantity {
+	text-align: center;
+	width: 30px;
+}
+
+.item-total {
+	text-align: right;
+	padding-right: 10px;
+}
+
+th.item-name {
+	text-align: center;
+}
+
+td.item-price {
+	text-align: right;
+	padding-right: 30px;
+}
+
+td.item-remove {
+	text-align: center;
+	font-size: 75%;
+	border: 1px solid #eee;
+	border-radius: 5px;
+}
+
+td.item-decrement {
+	text-align: center;
+	border: 1px solid #eee;
+	border-radius: 2px;
+	width: 10px;
+}
+
+td.item-increment {
+	text-align: center;
+	border: 1px solid #eee;
+	border-radius: 2px;
+	width: 10px;
+}
+
+.btns {
+	width: 100px;
+	text-align: center;
+	margin: 10px auto; 
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background-color: rgb(189, 189, 189);
+	color: white;
+	float: none;	
+}
+
+.btns:hover { 
+    background-color: rgb(223, 223, 223);
+    cursor: pointer;
+}
+
+a {
+	color: grey;
+	text-decoration: none;
+}
+
+a:hover {
+	color: grey;
+	text-decoration: underline;
+}
+
+#Email {
+	width: 325px;
+}
+
+sup {
+	color: red;
+}
+
+#fname, #lname, #city {
+	width: 150px;
+}
+
+#street {
+	width: 220px;
+}
+
+#postal {
+	width: 60px;
+}
+
+table, #orderForm {
+	margin: 2px auto; 
+	/*border: 1px solid #ddd;*/
+	text-align: left;
+	width: 600px;
+	border-radius: 5px;
+}
+
+table, #orderForm td {
+	background-color: rgb(189, 189, 189);
+}
+
+#orderForm td:nth-of-type(1) {
+	width: 150px;
+	font-weight: 400; 
+	padding: 3px 5px 3px 25px;
+}
+
+#orderForm td:nth-of-type(2) {
+	padding-left: 10px;
+	height: 30px;
+}
+
+#shipTitle, #orderInfoTitle {
+	font-weight: bold;
+	vertical-align: top;
+	width: 120px;
+}
+
+.orderSummary {
+	padding-left: 100px;
+}
+
+.eachItem {
+	padding-left: 100px;
+}
+
+#orderInfoMsg {
+	padding-left: 20px;
+}
+
+
+

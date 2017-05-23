@@ -1,0 +1,15 @@
+G:\CP_lv1\prog_funda\assignment\assignment02\A2YoonsukChoP2\A2YoonsukChoP2\bin\Debug\A2YoonsukChoP2.exe.config
+G:\CP_lv1\prog_funda\assignment\assignment02\A2YoonsukChoP2\A2YoonsukChoP2\bin\Debug\A2YoonsukChoP2.exe
+G:\CP_lv1\prog_funda\assignment\assignment02\A2YoonsukChoP2\A2YoonsukChoP2\bin\Debug\A2YoonsukChoP2.pdb
+G:\CP_lv1\prog_funda\assignment\assignment02\A2YoonsukChoP2\A2YoonsukChoP2\obj\Debug\A2YoonsukChoP2.csprojResolveAssemblyReference.cache
+G:\CP_lv1\prog_funda\assignment\assignment02\A2YoonsukChoP2\A2YoonsukChoP2\obj\Debug\A2YoonsukChoP2.exe
+G:\CP_lv1\prog_funda\assignment\assignment02\A2YoonsukChoP2\A2YoonsukChoP2\obj\Debug\A2YoonsukChoP2.pdb
+\\FS04D\Stu6\Home\Ycho5551\CP_lv1\prog_funda\assignment\assignment02\A2YoonsukChoP2\A2YoonsukChoP2\bin\Debug\A2YoonsukChoP2.exe.config
+\\FS04D\Stu6\Home\Ycho5551\CP_lv1\prog_funda\assignment\assignment02\A2YoonsukChoP2\A2YoonsukChoP2\obj\Debug\A2YoonsukChoP2.exe
+\\FS04D\Stu6\Home\Ycho5551\CP_lv1\prog_funda\assignment\assignment02\A2YoonsukChoP2\A2YoonsukChoP2\obj\Debug\A2YoonsukChoP2.pdb
+\\FS04D\Stu6\Home\Ycho5551\CP_lv1\prog_funda\assignment\assignment02\A2YoonsukChoP2\A2YoonsukChoP2\bin\Debug\A2YoonsukChoP2.exe
+\\FS04D\Stu6\Home\Ycho5551\CP_lv1\prog_funda\assignment\assignment02\A2YoonsukChoP2\A2YoonsukChoP2\bin\Debug\A2YoonsukChoP2.pdb
+\\FS04D\Stu6\Home\Ycho5551\CP_lv1\prog_funda\assignment\assignment02\A2YoonsukChoP2\A2YoonsukChoP2\obj\Debug\A2YoonsukChoP2.csprojResolveAssemblyReference.cache
+E:\CP_l1\prog_funda\assignment\assignment02\A2YoonsukChoP2\A2YoonsukChoP2\bin\Debug\A2YoonsukChoP2.exe.config
+E:\CP_l1\prog_funda\assignment\assignment02\A2YoonsukChoP2\A2YoonsukChoP2\obj\Debug\A2YoonsukChoP2.exe
+E:\CP_l1\prog_funda\assignment\assignment02\A2YoonsukChoP2\A2YoonsukChoP2\obj\Debug\A2YoonsukChoP2.pdb

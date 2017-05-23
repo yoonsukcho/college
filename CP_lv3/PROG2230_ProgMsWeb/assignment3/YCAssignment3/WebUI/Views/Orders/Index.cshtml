@@ -1,0 +1,52 @@
+@model IEnumerable<WebUI.Models.Orders>
+
+@{
+    ViewData["Title"] = "Order List";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.orderID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.custName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderEmail)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.orderID">
+                    @Html.DisplayFor(modelItem => item.orderID)
+                </a>
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.orderID">
+                    @Html.DisplayFor(modelItem => item.custName)
+                </a>
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.orderID">
+                    @Html.DisplayFor(modelItem => item.OrderEmail)
+                </a>
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.orderID">Edit</a> |
+                <a asp-action="Delete" asp-route-id="@item.orderID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,95 @@
+@model IEnumerable<WebUI.Models.Customers>
+
+@{
+    ViewData["Title"] = "Customer List";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.customerID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.custFName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.custLName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustEmail)
+            </th>
+@*
+    <th>
+        @Html.DisplayNameFor(model => model.custAddress)
+    </th>
+    <th>
+        @Html.DisplayNameFor(model => model.custCity)
+    </th>
+    <th>
+        @Html.DisplayNameFor(model => model.custPhone)
+    </th>
+    <th>
+        @Html.DisplayNameFor(model => model.custState)
+    </th>
+*@
+            <th>
+                @Html.DisplayNameFor(model => model.custZip)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr >
+            <td>
+                <a asp-action="Details" asp-route-id="@item.customerID">
+                    @Html.DisplayFor(modelItem => item.customerID)
+                </a>
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.customerID">
+                    @Html.DisplayFor(modelItem => item.custFName)
+                </a>
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.customerID">
+                    @Html.DisplayFor(modelItem => item.custLName)
+                </a>
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.customerID">
+                    @Html.DisplayFor(modelItem => item.CustEmail)
+                </a>
+            </td>
+@*
+                <td>
+                    @Html.DisplayFor(modelItem => item.custAddress)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.custCity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.custPhone)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.custState)
+                </td>
+*@
+                <td>
+                    @Html.DisplayFor(modelItem => item.custZip)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.customerID">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.customerID">Delete</a>
+                </td>
+            </tr>
+
+    }
+        </tbody>
+    </table>

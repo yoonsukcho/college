@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>g:/CP_lv3/PROG2370_ProgOOG/assmnt4/KKYCAssignment4/KKYCAssignment4/Content/images/Ball.png</File>
+    <File>g:/CP_lv3/PROG2370_ProgOOG/assmnt4/KKYCAssignment4/KKYCAssignment4/Content/images/BatLeft.png</File>
+    <File>g:/CP_lv3/PROG2370_ProgOOG/assmnt4/KKYCAssignment4/KKYCAssignment4/Content/images/BatRight.png</File>
+    <File>g:/CP_lv3/PROG2370_ProgOOG/assmnt4/KKYCAssignment4/KKYCAssignment4/Content/images/Scorebar.png</File>
+    <File>g:/CP_lv3/PROG2370_ProgOOG/assmnt4/KKYCAssignment4/KKYCAssignment4/Content/sounds/applause1.wav</File>
+    <File>g:/CP_lv3/PROG2370_ProgOOG/assmnt4/KKYCAssignment4/KKYCAssignment4/Content/sounds/click.wav</File>
+    <File>g:/CP_lv3/PROG2370_ProgOOG/assmnt4/KKYCAssignment4/KKYCAssignment4/Content/sounds/ding.wav</File>
+    <File>g:/CP_lv3/PROG2370_ProgOOG/assmnt4/KKYCAssignment4/KKYCAssignment4/Content/fonts/SpriteFont1.spritefont</File>
+    <File>g:/CP_lv3/PROG2370_ProgOOG/assmnt4/KKYCAssignment4/KKYCAssignment4/Content/fonts/letter_sb.png</File>
+  </SourceFiles>
+</SourceFileCollection>

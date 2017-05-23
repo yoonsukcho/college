@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Agent Adds Requester</title>
+
+  <!-- @briefRadioButton = [False] -->
+  <!-- @casualRadioButton = [False] -->
+  <!-- @fullyDressedRadioButton = [True] -->
+  <!-- @useCaseNumber = [3] -->
+  <!-- @subject [Agent] -->
+  <!-- @verb [Adds] -->
+  <!-- @_object [Requester] -->
+  <!-- @primaryActor = [Agent] -->
+  <!-- @scope = [ITSD] -->
+  <!-- @level = [User Goal] -->
+  <!-- @description = [The agent manages the information about employees who work directly for the service desk (service desk agents) and other IT employees who assist the service desk when tickets are escalated] -->
+  <!-- @preconditions = [The agent must have permission to access the step to add employees] -->
+  <!-- @minimal = [The basic information and the business impact of requester does not create] -->
+  <!-- @success = [The basic information and the business impact of requester create] -->
+  <!-- @main = [1. The new system record employee number, first name, last name, position, department, location, work email and work phone number.<br/>2. The new system must also store the position of the employee's manager ("reports to"), business impact, and VIP flag.<br/>3. The default requester business impact is "Low". The VIP flag is set to false by default.<br/>4. There should be an option to enter notes about the requester.<br/>5. There are three permission settings. The default is "Show only their requests". <br/>6. The values for "permission" are Show only their requests(default), Show all their department requests, and Show all their location requests.<br/>7. There needs to be a flag to indicate if the requester is a service request approver and another to indicate if the requester is a P.O. approver.] -->
+  <!-- @alternate = [2.1. We ask the requester for the role of the person they report to. <br/>2.2. Business impact, and VIP flag are based on the judgement of the person creating the requester record.<br/>3.1. The values for "business impact" are High medium and low.<br/>3.2. The VIP flag is used when assigning agents to tickets and prioritizing responses.] -->
+  <!-- @relatedInformation = [] -->
+
+<style>
+table.useCaseTable
+{
+    margin-left:auto;
+    margin-right:auto;
+    border:1px solid black;
+    border-spacing:0px; 
+    border-collapse:collapse;    
+    padding:5px; 
+    text-align:left;
+    width:910px;
+}
+
+td.useCaseLeftCell
+{
+    border:1px solid black;
+    border-spacing:0px;  
+    border-collapse:collapse;     
+    padding:5px; 
+    text-align:left;
+    width:200px;
+    vertical-align:top;
+}
+
+td.useCaseRightCell
+{
+    border:1px solid black;
+    border-spacing:0px;  
+    border-collapse:collapse;     
+    padding:5px; 
+    text-align:left;
+    vertical-align:top;
+}
+</style>
+
+</head>
+<body>
+  <table class="useCaseTable">
+  
+    <tr>
+      <td class="useCaseLeftCell">
+        Use Case 3
+      </td>
+      <td class="useCaseRightCell">
+        Agent Adds Requester
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="useCaseLeftCell">
+        Primary Actor
+      </td>
+      <td class="useCaseRightCell">
+        Agent
+      </td>   
+    </tr>
+    
+    <tr>
+      <td class="useCaseLeftCell">
+        Scope
+      </td>
+      <td class="useCaseRightCell">
+        ITSD
+      </td>      
+    </tr>     
+    
+    <tr>
+      <td class="useCaseLeftCell">
+        Level
+      </td>
+      <td class="useCaseRightCell">
+        User Goal
+      </td>      
+    </tr>   
+  
+    <tr>
+      <td class="useCaseLeftCell">
+        Description
+      </td>
+      <td class="useCaseRightCell">
+        The agent manages the information about employees who work directly for the service desk (service desk agents) and other IT employees who assist the service desk when tickets are escalated
+      </td>      
+    </tr>
+ 
+    <tr>
+      <td class="useCaseLeftCell">
+        Precondition(s)
+      </td>
+      <td class="useCaseRightCell">
+        The agent must have permission to access the step to add employees
+      </td>      
+    </tr>
+    
+    <tr>
+      <td class="useCaseLeftCell">
+        Minimal Guarantee(s)
+      </td>
+      <td class="useCaseRightCell">
+        The basic information and the business impact of requester does not create
+      </td>      
+    </tr>    
+    
+    <tr>
+      <td class="useCaseLeftCell">
+        Success Guarantee(s)
+      </td>
+      <td class="useCaseRightCell">
+        The basic information and the business impact of requester create
+      </td>      
+    </tr>  
+
+    <tr>
+      <td class="useCaseLeftCell">
+        Main Success Scenario/Flow
+      </td>
+      <td class="useCaseRightCell">
+        1. The new system record employee number, first name, last name, position, department, location, work email and work phone number.<br/>2. The new system must also store the position of the employee's manager ("reports to"), business impact, and VIP flag.<br/>3. The default requester business impact is "Low". The VIP flag is set to false by default.<br/>4. There should be an option to enter notes about the requester.<br/>5. There are three permission settings. The default is "Show only their requests". <br/>6. The values for "permission" are Show only their requests(default), Show all their department requests, and Show all their location requests.<br/>7. There needs to be a flag to indicate if the requester is a service request approver and another to indicate if the requester is a P.O. approver.
+      </td>      
+    </tr>    
+
+    <tr>
+      <td class="useCaseLeftCell">
+        Extensions / Alternate Flows
+      </td>
+      <td class="useCaseRightCell">
+        2.1. We ask the requester for the role of the person they report to. <br/>2.2. Business impact, and VIP flag are based on the judgement of the person creating the requester record.<br/>3.1. The values for "business impact" are High medium and low.<br/>3.2. The VIP flag is used when assigning agents to tickets and prioritizing responses.
+      </td>      
+    </tr> 
+   
+
+    <tr>
+      <td class="useCaseLeftCell">
+        Related Information
+      </td>
+      <td class="useCaseRightCell">
+        
+      </td>      
+    </tr> 
+   
+  </table>
+</body>
+</html>

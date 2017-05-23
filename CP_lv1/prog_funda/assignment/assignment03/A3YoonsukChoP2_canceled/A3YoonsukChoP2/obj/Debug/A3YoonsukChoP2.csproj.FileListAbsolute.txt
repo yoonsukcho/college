@@ -1,0 +1,13 @@
+G:\CP_lv1\prog_funda\assignment\assignment03\A3YoonsukChoP2\A3YoonsukChoP2\bin\Debug\A3YoonsukChoP2.exe.config
+G:\CP_lv1\prog_funda\assignment\assignment03\A3YoonsukChoP2\A3YoonsukChoP2\bin\Debug\A3YoonsukChoP2.exe
+G:\CP_lv1\prog_funda\assignment\assignment03\A3YoonsukChoP2\A3YoonsukChoP2\bin\Debug\A3YoonsukChoP2.pdb
+G:\CP_lv1\prog_funda\assignment\assignment03\A3YoonsukChoP2\A3YoonsukChoP2\obj\Debug\A3YoonsukChoP2.csprojResolveAssemblyReference.cache
+G:\CP_lv1\prog_funda\assignment\assignment03\A3YoonsukChoP2\A3YoonsukChoP2\obj\Debug\MainWindow.baml
+G:\CP_lv1\prog_funda\assignment\assignment03\A3YoonsukChoP2\A3YoonsukChoP2\obj\Debug\MainWindow.g.cs
+G:\CP_lv1\prog_funda\assignment\assignment03\A3YoonsukChoP2\A3YoonsukChoP2\obj\Debug\App.g.cs
+G:\CP_lv1\prog_funda\assignment\assignment03\A3YoonsukChoP2\A3YoonsukChoP2\obj\Debug\A3YoonsukChoP2_MarkupCompile.cache
+G:\CP_lv1\prog_funda\assignment\assignment03\A3YoonsukChoP2\A3YoonsukChoP2\obj\Debug\A3YoonsukChoP2.g.resources
+G:\CP_lv1\prog_funda\assignment\assignment03\A3YoonsukChoP2\A3YoonsukChoP2\obj\Debug\A3YoonsukChoP2.Properties.Resources.resources
+G:\CP_lv1\prog_funda\assignment\assignment03\A3YoonsukChoP2\A3YoonsukChoP2\obj\Debug\A3YoonsukChoP2.csproj.GenerateResource.Cache
+G:\CP_lv1\prog_funda\assignment\assignment03\A3YoonsukChoP2\A3YoonsukChoP2\obj\Debug\A3YoonsukChoP2.exe
+G:\CP_lv1\prog_funda\assignment\assignment03\A3YoonsukChoP2\A3YoonsukChoP2\obj\Debug\A3YoonsukChoP2.pdb

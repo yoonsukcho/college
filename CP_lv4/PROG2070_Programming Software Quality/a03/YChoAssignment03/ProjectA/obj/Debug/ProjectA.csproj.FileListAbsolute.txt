@@ -1,0 +1,14 @@
+C:\Users\Yoonsuk Cho\Downloads\a03\YChoAssignment03\ProjectA\bin\Debug\ProjectA.exe.config
+C:\Users\Yoonsuk Cho\Downloads\a03\YChoAssignment03\ProjectA\bin\Debug\ProjectA.exe
+C:\Users\Yoonsuk Cho\Downloads\a03\YChoAssignment03\ProjectA\bin\Debug\ProjectA.pdb
+C:\Users\Yoonsuk Cho\Downloads\a03\YChoAssignment03\ProjectA\obj\Debug\ProjectA.exe
+C:\Users\Yoonsuk Cho\Downloads\a03\YChoAssignment03\ProjectA\obj\Debug\ProjectA.pdb
+c:\Users\Yoonsuk Cho\Downloads\a03\YChoAssignment03\ProjectA\obj\Debug\ProjectA.csprojResolveAssemblyReference.cache
+G:\CP_lv4\PROG2070_Programming Software Quality\a03\YChoAssignment03\ProjectA\bin\Debug\ProjectA.exe.config
+G:\CP_lv4\PROG2070_Programming Software Quality\a03\YChoAssignment03\ProjectA\obj\Debug\ProjectA.exe
+G:\CP_lv4\PROG2070_Programming Software Quality\a03\YChoAssignment03\ProjectA\obj\Debug\ProjectA.pdb
+G:\CP_lv4\PROG2070_Programming Software Quality\a03\YChoAssignment03\ProjectA\bin\Debug\ProjectA.exe
+G:\CP_lv4\PROG2070_Programming Software Quality\a03\YChoAssignment03\ProjectA\bin\Debug\ProjectA.pdb
+G:\CP_lv4\PROG2070_Programming Software Quality\a03\YChoAssignment03\ProjectA\bin\Debug\nunit.framework.dll
+G:\CP_lv4\PROG2070_Programming Software Quality\a03\YChoAssignment03\ProjectA\bin\Debug\nunit.framework.xml
+G:\CP_lv4\PROG2070_Programming Software Quality\a03\YChoAssignment03\ProjectA\obj\Debug\ProjectA.csprojResolveAssemblyReference.cache

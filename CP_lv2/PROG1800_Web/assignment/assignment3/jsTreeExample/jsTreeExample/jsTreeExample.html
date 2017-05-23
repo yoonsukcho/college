@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.ancestors * {
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+}
+#me {color:blue;}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+	function FindSiblings() 
+	{
+		Reset();
+		$(function() {
+			$("#me").siblings().css({"color": "red", "border": "2px solid red"});
+		});
+	}	
+
+	function OldestSibling() 
+	{
+		Reset();
+		$(function() {
+			$("#me").siblings("#Steve").css({"color": "red", "border": "2px solid red"});
+		});
+	}	
+
+	function Closest() 
+	{
+		Reset();
+		$(function() {
+			$("#me").closest("li").css({"color": "red", "border": "2px solid red"});
+		});
+	}	
+
+	function Reset() 
+	{
+		$(function() {
+			$("#Ancestors").find("*").css({"color": "lightgrey", "border": "2px solid lightgrey"});
+			$("#me").css({"color": "blue", "border": "2px solid lightgrey"});
+		});
+	}	
+	
+</script>
+</head>
+<body>
+
+<div class="ancestors">Ancesters
+  <div style="width:500px;">Ancesters
+    <ul id="Ancestors">Ancesters
+		<li id="William" class ="Root">William
+			<ul id="Jack" class="Child">Jack
+				<li id ="Richard" class ="Grandchild">Richard
+					<ul id="Steve" class="GreatGrandChild">Steve
+						<li id="Hayley" class ="GreatGreatGrandChild" class="Sisters" Class="Cousins">Hayley</li>
+						<li id="Abigail" class ="GreatGreatGrandChild" class="Sisters" Class="Cousins">Abigail</li>
+					</ul>
+					<ul id ="Dave" class ="Child">Dave
+										<li id="Jacqui" class ="GreatGreatGrandChild">Jacqui</li>
+										<li id="Piper" class ="GreatGreatGrandChild">Piper</li>
+					</ul>
+					<ul id="Greg" class="Child">Greg</ul>
+					<ul id="me" class ="Child">Chris (ME)</ul>
+				</li>
+
+			</ul>
+		 </li>
+	 </ul>
+  </div>
+
+</div>
+	<button onclick="FindSiblings()">My Siblings</button>
+	<button onclick="OldestSibling()">My Oldest Sibling</button>
+	<button onclick="Closest()">My Closest</button>
+	<button onclick="Reset()">Reset</button>
+</body>
+</html>

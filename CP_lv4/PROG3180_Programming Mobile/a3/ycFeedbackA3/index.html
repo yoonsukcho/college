@@ -1,0 +1,234 @@
+<!--
+Document   : index.html
+Created on : Feb 21, 2017, 9:06:36 AM
+Revised on : Mar 06, 2017
+Revised on : Mar 27, 2017
+
+Author     : Yoonsuk Cho
+PROG3180 Assignment 03
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+          charset="UTF-8">
+    <title>Assignment3 in jQuery Mobile</title>
+    <!-- jQuery Library -->
+    <script src="js/lib/jquery-2.1.4.js"></script>
+    <!-- jQuery Mobile library-->
+    <script src="js/lib/jquery.mobile-1.4.5.js"></script>
+    <!--Validation-->
+    <script src="js/lib/jquery.validate.js"></script>
+    <!-- jQuery Mobile style sheet-->
+    <link rel="stylesheet" type="text/css" href="css/lib/jquery.mobile-1.4.5.css">
+    <!-- my using files-->
+    <script src="js/ycdatabase.js"></script>
+    <script src="js/ycfeedbackDAL.js"></script>
+    <script src="js/ycfacade.js"></script>
+    <script src="js/ycutil.js"></script>
+    <script src="js/ycglobal.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/ycmystyle.css">
+
+</head>
+<body>
+
+    <!-- page 1 -->
+    <div data-role="page" id="ycHomePage">
+        <header data-role="header" data-theme="b" data-position="fixed">
+            <h1>YC Feedback A3</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#ycHomePage" data-icon="home" class="ui-btn-active ui-state-persist"
+                           data-theme="a">Home</a></li>
+                    <li><a href="#ycAddFeedbackPage" data-icon="plus" data-theme="a">Add</a></li>
+                    <li><a href="#ycViewFeedbackPage" data-icon="grid" data-theme="a">Reviews</a></li>
+                    <li><a href="#ycSettingsPage" data-icon="gear" data-theme="a">Settings</a></li>
+                </ul>
+            </div>
+        </header>
+        <section data-role="content">
+            <h1>Yoonsuk Cho's Feedback A3 App</h1>
+            <p>Welcome to Yoonsuk Cho's Feedback A1 App. A prototype designed for mobile programming class. This is the
+                first iteration of the app to keep track of different places visited along you with your reviews.</p>
+            <img id="myImg" src="img/yc-icon.png"/>
+            <p>Please feel free to contact me if you have any suggestions!</p>
+            <a href="#" data-role="button" data-icon="plus">Call: 519.729.1890</a>
+            <a href="mailto:ycho5551@conestogac.on.ca" data-role="button" data-icon="plus">ycho5551@conestogac.on.ca</a>
+            <p>Web site:</p>
+            <a href="http://www.conestogac.on.ca/" data-role="button" data-icon="plus">Conestoga College</a>
+        </section>
+        <footer data-role="footer" data-theme="b" data-position="fixed">
+            <h4>&copy; 2017 Yoonsuk Cho</h4>
+        </footer>
+    </div>
+
+    <!-- page 2 -->
+    <div data-role="page" id="ycAddFeedbackPage">
+        <header data-role="header" data-theme="b" data-position="fixed">
+            <h1>Add a Feedback</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#ycHomePage" data-icon="home" data-theme="a">Home</a></li>
+                    <li><a href="#ycAddFeedbackPage" data-icon="plus" data-theme="a" class="ui-btn-active ui-state-persist"
+                    >Add</a></li>
+                    <li><a href="#ycViewFeedbackPage" data-icon="grid" data-theme="a">Reviews</a></li>
+                    <li><a href="#ycSettingsPage" data-icon="gear" data-theme="a">Settings</a></li>
+                </ul>
+            </div>
+        </header>
+        <section data-role="content">
+            <form action="#" id="ycAddForm">
+                <label for="ycBizName">Business Name:</label>
+                <input type="text" id="ycBizName" name="ycBizName">
+                <label for="ycType">Type:</label>
+                <select name="ycType" id="ycType">
+                    <option value="1">Other</option>
+                    <option value="2">Canadian</option>
+                </select>
+                <label for="ycRevEmail">Reviewer Email:</label>
+                <input type="text" id="ycRevEmail" name="ycRevEmail">
+                <label for="ycRevCmt">Reviewer Comments:</label>
+                <textarea id="ycRevCmt" name="ycRevCmt"></textarea>
+                <label for="ycRevDate">Review Date:</label>
+                <input type="date" id="ycRevDate" name="ycRevDate">
+                <label>
+                    <input type="checkbox" name="ycDoAddRate" id="ycDoAddRate" checked="checked">Do you want to add your ratings?
+                </label>
+                <div id="ycRateDiv">
+                    <label for="ycFoodQuality">Food Quality:</label>
+                    <input type="number" class="ycSumSrc" id="ycFoodQuality" name="ycFoodQuality">
+                    <label for="ycService">Service:</label>
+                    <input type="number" class="ycSumSrc" id="ycService" name="ycService">
+                    <label for="ycValue">Value:</label>
+                    <input type="number" class="ycSumSrc" id="ycValue" name="ycValue">
+                    <label for="ycOvrRate">Overall Ratings (calculated):</label>
+                    <input type="text" id="ycOvrRate" name="ycOvrRate" disabled>
+                </div>
+                <a href="#" data-role="button" id="ycBtnSave" name="ycBtnSave" data-inline="true" class="ycBtnBlue">Save</a>
+            </form>
+        </section>
+        <footer data-role="footer" data-theme="b" data-position="fixed">
+            <h4>&copy; 2017 Yoonsuk Cho</h4>
+        </footer>
+    </div>
+
+    <!-- page 3 -->
+    <div data-role="page" id="ycViewFeedbackPage">
+        <header data-role="header" data-theme="b" data-position="fixed">
+            <h1>Contact</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#ycHomePage" data-icon="home" data-theme="a">Home</a></li>
+                    <li><a href="#ycAddFeedbackPage" data-icon="plus" data-theme="a">Add</a></li>
+                    <li><a href="#ycViewFeedbackPage" data-icon="grid" class="ui-btn-active ui-state-persist" data-theme="a">Reviews</a></li>
+                    <li><a href="#ycSettingsPage" data-icon="gear" data-theme="a">Settings</a></li>
+                </ul>
+            </div>
+        </header>
+        <section data-role="content">
+            <ul data-role="listview" data-inset="true" id="ycFeedbackList">
+                <li data-icon="false">
+                    <a href="#ycEditFeedbackPage">
+                        <h1>Business Name: Hwy 401</h1>
+                        <p>Reviewer Email: reviewer@email.com</p>
+                        <p>Comments: Heavy traffic, but it's free.</p>
+                        <p>Overall Rating: 80%</p>
+                    </a>
+                </li>
+                <li data-icon="false">
+                    <a href="#ycEditFeedbackPage">
+                        <h1>Business Name: Hwy 407</h1>
+                        <p>Reviewer Email: reviewer2@email.com</p>
+                        <p>Comments: No traffic, but it's not free.</p>
+                        <p>Overall Rating: 70%</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <footer data-role="footer" data-theme="b" data-position="fixed">
+            <h4>&copy; 2017 Yoonsuk Cho</h4>
+        </footer>
+    </div>
+
+    <!-- page 4 -->
+    <div data-role="page" id="ycEditFeedbackPage">
+        <header data-role="header" data-theme="b" data-position="fixed">
+            <h1>Modify Feedback</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#ycHomePage" data-icon="home" data-theme="a">Home</a></li>
+                    <li><a href="#ycAddFeedbackPage" data-icon="plus" data-theme="a">Add</a></li>
+                    <li><a href="#ycViewFeedbackPage" data-icon="grid" data-theme="a" class="ui-btn-active ui-state-persist">Reviews</a></li>
+                    <li><a href="#ycSettingsPage" data-icon="gear" data-theme="a">Settings</a></li>
+                </ul>
+            </div>
+        </header>
+        <section data-role="content">
+            <form action="#" id="ycEditForm">
+
+                <label for="ycBizNameEdit">Business Name:</label>
+                <input type="text" id="ycBizNameEdit" name="ycBizNameEdit">
+                <label for="ycTypeEdit">Type:</label>
+                <select name="ycTypeEdit" id="ycTypeEdit">
+                    <option value="1">Other</option>
+                    <option value="2">Canadian</option>
+                </select>
+                <label for="ycRevEmailEdit">Reviewer Email:</label>
+                <input type="text" id="ycRevEmailEdit" name="ycRevEmailEdit">
+                <label for="ycRevCmtEdit">Reviewer Comments:</label>
+                <textarea id="ycRevCmtEdit" name="ycRevCmtEdit"></textarea>
+                <label for="ycRevDateEdit">Review Date:</label>
+                <input type="date" id="ycRevDateEdit" name="ycRevDateEdit">
+                <label for="ycDoAddRateEdit">
+                    <input type="checkbox" name="ycDoAddRateEdit" id="ycDoAddRateEdit" checked >Do you want to add your ratings?
+                </label>
+                <div id="ycRateDivEdit">
+                    <label for="ycFoodQualityEdit">Food Quality:</label>
+                    <input type="number" class="ycSumSrcEdit" id="ycFoodQualityEdit" name="ycFoodQualityEdit">
+                    <label for="ycService">Service:</label>
+                    <input type="number" class="ycSumSrcEdit" id="ycServiceEdit" name="ycServiceEdit">
+                    <label for="ycValue">Value:</label>
+                    <input type="number" class="ycSumSrcEdit" id="ycValueEdit" name="ycValueEdit">
+                    <label for="ycOvrRateEdit">Overall Ratings (calculated):</label>
+                    <input type="text" id="ycOvrRateEdit" name="ycOvrRateEdit" disabled>
+                </div>
+                <div data-role="controlgroup" data-type="horizontal">
+                    <a href="#" data-role="button" id="ycBtnCancel" name="ycBtnCancel"  data-theme="b" >Cancel</a>
+                    <a href="#" data-role="button" id="ycBtnDelete" name="ycBtnDelete" data-theme="b">Delete</a>
+                    <a href="#" data-role="button" id="ycBtnUpdate" name="ycBtnUpdate"  data-theme="b" class="ycBtnBlue">Update</a>
+                </div>
+
+            </form>
+        </section>
+        <footer data-role="footer" data-theme="b" data-position="fixed">
+            <h4>&copy; 2017 Yoonsuk Cho</h4>
+        </footer>
+    </div>
+
+    <!-- page 5 -->
+    <div data-role="page" id="ycSettingsPage">
+        <header data-role="header" data-theme="b" data-position="fixed">
+            <h1>Contact</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#ycHomePage" data-icon="home" data-theme="a">Home</a></li>
+                    <li><a href="#ycAddFeedbackPage" data-icon="plus" data-theme="a">Add</a></li>
+                    <li><a href="#ycViewFeedbackPage" data-icon="grid" data-theme="a">Reviews</a></li>
+                    <li><a href="#ycSettingsPage" data-icon="gear" class="ui-btn-active ui-state-persist" data-theme="a">Settings</a></li>
+                </ul>
+            </div>
+        </header>
+        <section data-role="content">
+            <form action="#" id="ycSettingForm">
+                <label for="ycDefaultEmail">Default Email:</label>
+                <input type="text" id="ycDefaultEmail" name="ycDefaultEmail" value="ycho5551@conestogac.on.ca">
+                <a href="" data-role="button" data-theme="a" id="ycBtnSettingSave" name="ycBtnSettingSave" class="ycBtnBlue">Save Defaults</a>
+                <a href="#" data-role="button" data-theme="b" id="ycBtnClearDB" name="ycBtnClearDB">Clear Database</a>
+            </form>
+        </section>
+        <footer data-role="footer" data-theme="b" data-position="fixed">
+            <h4>&copy; 2017 Yoonsuk Cho</h4>
+        </footer>
+    </div>
+</body>
+</html>

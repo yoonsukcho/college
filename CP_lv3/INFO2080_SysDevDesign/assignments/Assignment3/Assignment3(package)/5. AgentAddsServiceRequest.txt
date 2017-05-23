@@ -1,0 +1,87 @@
+' AgentAddsServiceRequest.txt
+' PlantUML script to create a sequence diagram
+'
+' Revision History:
+'     YCho, 2016.10.07 : Created
+
+@startuml
+
+autonumber
+
+actor Agent
+participant Ticket <<entity>>
+participant ServiceRequestForm <<boundary>>
+participant ServiceRequestController <<control>>
+participant ServiceRequest <<entity>>
+participant Department <<entity>>
+participant ServiceLevelAgreement <<entity>>
+participant ServiceCategory <<entity>>
+participant ServiceItem <<entity>>
+participant ServiceLevelExpectation <<enumeration>>
+participant ServiceRequestAccess <<data access>>
+database ITSD 
+
+title Agent Adds Service Request
+
+Agent -> ServiceRequestForm : initiateServiceRequest
+
+activate Ticket
+
+ServiceRequestForm -> ServiceRequestController : addServiceRequest
+
+ServiceRequestController --> ServiceRequest : addServiceRequest
+
+ServiceRequest --> ServiceRequestController : ServiceRequest
+
+activate ServiceRequest
+
+ServiceRequestController <-> ServiceRequestAccess : retrieveDepartment
+note right : Retrieve from the ITSD database
+
+activate Department
+
+ServiceRequestController <-> ServiceRequestAccess : retrieveServiceLevelAgreement
+note right : Retrieve from the ITSD database
+
+activate ServiceLevelAgreement
+
+ServiceRequestController <-> ServiceRequestAccess : retrieveServiceCategory
+note right : Retrieve from the ITSD database
+
+activate ServiceCategory
+
+ServiceRequestController -> ServiceRequestForm : updateDisplay
+
+ServiceRequestForm -> Agent : displayInputs
+
+Agent -> ServiceRequestForm : selectServiceCategory
+
+ServiceRequestForm -> ServiceRequestController : retrieveServiceItem
+
+ServiceRequestController <-> ServiceRequestAccess : retrieveServiceItem
+note right : Retrieve from the ITSD database
+
+activate ServiceItem
+
+ServiceRequestController -> ServiceRequestForm : updateDisplay
+
+ServiceRequestForm -> Agent : displayInputs
+
+Agent -> ServiceRequestForm : selectServiceItem
+
+ServiceRequestForm -> ServiceRequestController : retrieveServiceLevelExpectation
+
+ServiceRequestController <-> ServiceLevelExpectation : retrieveServiceLevelExpectation
+
+activate ServiceLevelExpectation
+
+ServiceRequestController -> ServiceRequestForm : updateDisplay
+
+ServiceRequestForm -> Agent : displayInputs
+
+Agent -> ServiceRequestForm : inputServiceRequest
+
+ServiceRequestForm -> Ticket : returnServiceRequestInfo
+
+@enduml
+

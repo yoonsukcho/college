@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1010]G:\CP_lv4\PROG2070_Programming Software Quality\a02\YChoAssignment02\YChoAssignment02.Tests\bin\Debug\YChoAssignment02.Tests.dll</TopNode>
+  <SelectedNode>[0-1010]G:\CP_lv4\PROG2070_Programming Software Quality\a02\YChoAssignment02\YChoAssignment02.Tests\bin\Debug\YChoAssignment02.Tests.dll</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1010]G:\CP_lv4\PROG2070_Programming Software Quality\a02\YChoAssignment02\YChoAssignment02.Tests\bin\Debug\YChoAssignment02.Tests.dll" Expanded="true" />
+    <Node UniqueName="[0-1011]YChoAssignment02" Expanded="true" />
+    <Node UniqueName="[0-1012]YChoAssignment02.Tests" Expanded="true" />
+    <Node UniqueName="[0-1000]YChoAssignment02.Tests.TriangleSolverTest" Expanded="true" />
+    <Node UniqueName="[0-1001]YChoAssignment02.Tests.TriangleSolverTest.AnalyzeTest" Expanded="true" />
+  </Nodes>
+</VisualState>

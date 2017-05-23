@@ -1,0 +1,45 @@
+﻿@model IEnumerable<WebUI.Models.Basket>
+@using Microsoft.AspNetCore.Http
+
+@{
+    ViewData["Title"] = "Basket List";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.productID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.customerID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.orderID)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                        @Html.DisplayFor(modelItem => item.productID)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.customerID)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.orderID)
+                </td>
+                <td>
+                    <a asp-action="DeleteBasket" asp-route-id="@item.productID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

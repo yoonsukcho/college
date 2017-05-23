@@ -1,0 +1,18 @@
+your name
+
+PROG2220: Section 1
+
+Assignment 3: Task 0
+
+Current System Date
+2015-09-17 13:56:17
+
+
+*** Task 0, Sample script to show rows affected ***
+
+INSERT: rows affected
+1
+UPDATE: rows affected
+1
+DELETE: rows affected
+1

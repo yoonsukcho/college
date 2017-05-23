@@ -1,0 +1,15 @@
+G:\CP_lv1\prog_funda\assignment\assignment04\A4YoonsukChoP1\A4YoonsukChoP1\A4YoonsukChoP1\bin\Debug\A4YoonsukChoP1.exe.config
+G:\CP_lv1\prog_funda\assignment\assignment04\A4YoonsukChoP1\A4YoonsukChoP1\A4YoonsukChoP1\obj\Debug\A4YoonsukChoP1.csprojResolveAssemblyReference.cache
+G:\CP_lv1\prog_funda\assignment\assignment04\A4YoonsukChoP1\A4YoonsukChoP1\A4YoonsukChoP1\bin\Debug\A4YoonsukChoP1.exe
+G:\CP_lv1\prog_funda\assignment\assignment04\A4YoonsukChoP1\A4YoonsukChoP1\A4YoonsukChoP1\bin\Debug\A4YoonsukChoP1.pdb
+G:\CP_lv1\prog_funda\assignment\assignment04\A4YoonsukChoP1\A4YoonsukChoP1\A4YoonsukChoP1\obj\Debug\A4YoonsukChoP1.exe
+G:\CP_lv1\prog_funda\assignment\assignment04\A4YoonsukChoP1\A4YoonsukChoP1\A4YoonsukChoP1\obj\Debug\A4YoonsukChoP1.pdb
+c:\Users\Administrator\Documents\homework\CP_l1\prog_funda\assignment\assignment04\A4YoonsukChoP1\A4YoonsukChoP1\A4YoonsukChoP1\bin\Debug\A4YoonsukChoP1.exe.config
+c:\Users\Administrator\Documents\homework\CP_l1\prog_funda\assignment\assignment04\A4YoonsukChoP1\A4YoonsukChoP1\A4YoonsukChoP1\obj\Debug\A4YoonsukChoP1.exe
+c:\Users\Administrator\Documents\homework\CP_l1\prog_funda\assignment\assignment04\A4YoonsukChoP1\A4YoonsukChoP1\A4YoonsukChoP1\obj\Debug\A4YoonsukChoP1.pdb
+c:\Users\Administrator\Documents\homework\CP_l1\prog_funda\assignment\assignment04\A4YoonsukChoP1\A4YoonsukChoP1\A4YoonsukChoP1\bin\Debug\A4YoonsukChoP1.exe
+c:\Users\Administrator\Documents\homework\CP_l1\prog_funda\assignment\assignment04\A4YoonsukChoP1\A4YoonsukChoP1\A4YoonsukChoP1\bin\Debug\A4YoonsukChoP1.pdb
+c:\Users\Administrator\Documents\homework\CP_l1\prog_funda\assignment\assignment04\A4YoonsukChoP1\A4YoonsukChoP1\A4YoonsukChoP1\obj\Debug\A4YoonsukChoP1.csprojResolveAssemblyReference.cache
+E:\CP_l1\prog_funda\assignment\assignment04\A4YoonsukChoP1\A4YoonsukChoP1\A4YoonsukChoP1\bin\Debug\A4YoonsukChoP1.exe.config
+E:\CP_l1\prog_funda\assignment\assignment04\A4YoonsukChoP1\A4YoonsukChoP1\A4YoonsukChoP1\obj\Debug\A4YoonsukChoP1.exe
+E:\CP_l1\prog_funda\assignment\assignment04\A4YoonsukChoP1\A4YoonsukChoP1\A4YoonsukChoP1\obj\Debug\A4YoonsukChoP1.pdb

@@ -1,0 +1,6 @@
+cd c:\Program Files\MySQL\MySQL Server 5.7\bin\
+
+mysql -u root -p < g:\CP_lv3\PROG2220-Database_SQL\A5\A5\YCA05Task1.sql > g:\CP_lv3\PROG2220-Database_SQL\A5\A5\YCA05Task1.out
+mysql -u root -p < g:\CP_lv3\PROG2220-Database_SQL\A5\A5\YCA05Task2.sql > g:\CP_lv3\PROG2220-Database_SQL\A5\A5\YCA05Task2.out
+mysql -u root -p < g:\CP_lv3\PROG2220-Database_SQL\A5\A5\YCA05Task3.sql > g:\CP_lv3\PROG2220-Database_SQL\A5\A5\YCA05Task3.out
+##mysql -u root -p --force < g:\CP_lv3\PROG2220-Database_SQL\A5\A5\YCA05Task3.sql 1> g:\CP_lv3\PROG2220-Database_SQL\A5\A5\YCA05Task3.out 2> g:\CP_lv3\PROG2220-Database_SQL\A5\A5\YCA05Task3.err

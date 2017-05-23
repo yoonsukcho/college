@@ -1,0 +1,61 @@
+@model YCBusService.Models.BusStop
+
+@{
+    ViewData["Title"] = "Bus Stop - Create";
+}
+
+<h2>Bus Stop - Create</h2>
+
+<form asp-action="Create">
+    <div class="form-horizontal">
+        <h4>BusStop</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="BusStopNumber" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="BusStopNumber" class="form-control"  />
+                <span asp-validation-for="BusStopNumber" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <div class="checkbox">
+                    <input asp-for="GoingDowntown" />
+                    <label asp-for="GoingDowntown"></label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Location" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Location" class="form-control" />
+                <span asp-validation-for="Location" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="LocationHash" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <div id="locationHashDiv">
+                    
+                </div>
+                <input type="hidden" asp-for="LocationHash" class="form-control" />
+                <!--<input asp-for="LocationHash" class="form-control" />-->
+                <span asp-validation-for="LocationHash" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

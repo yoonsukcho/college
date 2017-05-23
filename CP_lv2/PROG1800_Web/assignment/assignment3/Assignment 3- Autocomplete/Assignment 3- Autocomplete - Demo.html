@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Assignment 3 - Autocomplete Fruits</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script>
+  $(function() {
+  <!-- Autocomplete format -->
+    var names = [  "Apple",
+      "Pear",
+      "Orange",
+      "Dragon fruit (Pitaya)",
+      "Cranberry",
+      "Eggplant",
+      "Gooseberry" ];
+
+    var mapper = {
+
+    };
+    var normalize = function( term ) {
+      var ret = "";
+      for ( var i = 0; i < term.length; i++ ) {
+        ret += mapper[ term.charAt(i) ] || term.charAt(i);
+      }
+      return ret;
+    };
+
+    $( "#fruits" ).autocomplete({
+      source: function( request, response ) {
+        var matcher = new RegExp( $.ui.autocomplete.escapeRegex( request.term ), "i" );
+        response( $.grep( names, function( value ) {
+          value = value.label || value.value || value;
+          return matcher.test( value ) || matcher.test( normalize( value ) );
+        }) );
+      }
+    });
+  });
+  </script>
+</head>
+<body>
+
+<div class="ui-widget">
+  <form>
+  <label for="fruits">Fruits: </label>
+  <input id="fruits">
+  </form>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+G:\CP_lv4\PROG2070_Programming Software Quality\a01\YChoAssignment01\YChoAssignment01\bin\Debug\YChoAssignment01.exe.config
+G:\CP_lv4\PROG2070_Programming Software Quality\a01\YChoAssignment01\YChoAssignment01\bin\Debug\YChoAssignment01.exe
+G:\CP_lv4\PROG2070_Programming Software Quality\a01\YChoAssignment01\YChoAssignment01\bin\Debug\YChoAssignment01.pdb
+G:\CP_lv4\PROG2070_Programming Software Quality\a01\YChoAssignment01\YChoAssignment01\obj\Debug\YChoAssignment01.exe
+G:\CP_lv4\PROG2070_Programming Software Quality\a01\YChoAssignment01\YChoAssignment01\obj\Debug\YChoAssignment01.pdb

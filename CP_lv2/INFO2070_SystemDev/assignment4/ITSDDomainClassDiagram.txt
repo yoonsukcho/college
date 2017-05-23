@@ -1,0 +1,142 @@
+' ITSD Domain Class Diagram.txt
+' PlantUML script to create a domain class diagram
+'
+' Revision History:
+'    Jodi Visser, Frances Desharnais, Yoonsuk Cho, 
+'    2016.04.01: Created
+
+@startuml
+
+hide empty methods
+
+title ITSD Domain Class Diagram
+
+namespace ITSD {
+
+'All associations except the association class
+'which should be declared near the bottom of
+'the script (see below)
+
+Employee <|-- Requester
+Employee "*" -- "1" Location
+Employee "*" -- "1" Department
+Employee "*" -- "1" Position
+Employee <|-- Agent
+Requester "*" -- "1" BusinessImpact
+Requester "1" -- "*" Ticket
+Ticket <|-- Incident
+Ticket <|-- ServiceRequest
+Ticket <|-- Change
+Ticket <|-- Problems
+Ticket "*" -- "1" Agent
+Agent "*" -- "*" ServiceTeam
+Agent "1" -- "1" AgentConfidential
+(Agent, ServiceTeam) .. AgentServiceTeam
+
+
+class BusinessImpact {
+    name
+}
+
+abstract class Ticket {
+    number
+	type
+	status
+	requestMode
+	title
+	description
+	notes
+	requestersNumber
+	agentsNumber
+	impact
+	urgency
+	priority
+}
+
+class Incident {
+    errorRecord
+}
+
+class ServiceRequest {
+    itemID
+    levelAgreeID
+}
+
+class Change {
+    changeCategory
+    changeRisk
+    reason
+    implications
+	rolloutPlan
+	backoutPlan
+	approvals
+	releaseInfo	
+} 
+
+class Problems {
+    rootCause
+    symptoms
+	permSolutionTitle
+	permSolutionDesc
+	workSolutionTitle
+	workSolutionDesc
+}
+
+abstract class Employee {
+    number
+    lastName
+    firstName
+    middleName
+    department
+    position
+    location
+	workPhoneNumber
+	phoneExtension
+	workEmail
+	imageFileName
+	imageFileEmployee
+	notes	
+}
+
+class Location {
+    name    
+}
+
+class Department {
+    name    
+}
+
+class Position {
+    name    
+}
+
+class Requester {
+    employeeNumber
+    businessImpact
+    VIPFlag
+    approver
+}
+
+class AgentConfidential {
+    privatePhoneNumber
+	privateEmail
+}
+
+class Agent {
+    serviceTier
+}
+
+class ServiceTeam {
+    name
+}
+
+class AgentServiceTeam {
+    teamName
+	employeeNumber
+}
+
+
+
+}
+
+@enduml

@@ -1,0 +1,10 @@
+G:\CP_lv4\PROG2070_Programming Software Quality\a02\YChoAssignment02\YChoAssignment02.Tests\bin\Debug\YChoAssignment02.Tests.dll
+G:\CP_lv4\PROG2070_Programming Software Quality\a02\YChoAssignment02\YChoAssignment02.Tests\bin\Debug\YChoAssignment02.Tests.pdb
+G:\CP_lv4\PROG2070_Programming Software Quality\a02\YChoAssignment02\YChoAssignment02.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+G:\CP_lv4\PROG2070_Programming Software Quality\a02\YChoAssignment02\YChoAssignment02.Tests\bin\Debug\nunit.framework.dll
+G:\CP_lv4\PROG2070_Programming Software Quality\a02\YChoAssignment02\YChoAssignment02.Tests\bin\Debug\YChoAssignment02.exe
+G:\CP_lv4\PROG2070_Programming Software Quality\a02\YChoAssignment02\YChoAssignment02.Tests\bin\Debug\YChoAssignment02.pdb
+G:\CP_lv4\PROG2070_Programming Software Quality\a02\YChoAssignment02\YChoAssignment02.Tests\bin\Debug\nunit.framework.xml
+G:\CP_lv4\PROG2070_Programming Software Quality\a02\YChoAssignment02\YChoAssignment02.Tests\obj\Debug\YChoAssignment02.Tests.csprojResolveAssemblyReference.cache
+G:\CP_lv4\PROG2070_Programming Software Quality\a02\YChoAssignment02\YChoAssignment02.Tests\obj\Debug\YChoAssignment02.Tests.dll
+G:\CP_lv4\PROG2070_Programming Software Quality\a02\YChoAssignment02\YChoAssignment02.Tests\obj\Debug\YChoAssignment02.Tests.pdb

@@ -1,0 +1,143 @@
+/*
+PROG1800 Sec2 , Assignment 5, 14 April 2016. Yoonsuk Cho #7135551
+ : css file of all php files
+*/
+
+html {
+	background-color: rgb(215, 241, 177);
+	font-family: 'Open Sans', sans-serif;
+	font-size: .9em;
+}
+#allDv {
+	width: 650px;
+	margin: 10px auto; 
+	display: block;
+	text-align: center;
+}		
+.eachDiv {
+	height: 350px;
+	width: 626px;
+	border-radius: 15px;
+	padding: 20px 10px 20px 10px;
+	border: 2px solid #73AD21;
+	background-color: #ffffff;
+}
+.each2Div {
+	/*height: 350px;*/
+	width: 626px;
+	border-radius: 15px;
+	padding: 20px 10px 20px 10px;
+	border: 2px solid #73AD21;
+	background-color: #ffffff;
+}
+.resultDiv {
+	/*height: 350px;*/
+	width: 626px;
+	border-radius: 15px;
+	padding: 20px 10px 20px 10px;
+	border: 2px solid #73AD21;
+	background-color: #ffffff;
+}
+.btnDiv {
+	position: fixed;
+	top: 390px;
+	height: 30px;
+	width: 626px;
+	margin: 10px auto; 
+}
+.btnHomeDiv {
+	position: fixed;
+	top: 0px;
+	height: 30px;
+	width: 626px;
+	margin: 10px auto; 
+}
+.label {
+	width: 150px;
+	float: left;
+	margin: 5px 10px 5px 15px;
+	text-align: right;
+}
+
+.num {
+	float: left;
+	text-align: right;
+	margin: 5px 200px 5px 15px;
+	padding: 3px 5px 3px 5px;
+	width: 70px;
+}
+
+input[type="text"] {
+	float: left;
+	padding: 3px 5px 3px 5px;
+}
+
+.char_l {
+	margin: 5px 10px 5px 15px;
+	width: 270px;
+}
+
+.char_m {
+	margin: 5px 100px 5px 15px;
+	width: 170px;
+}
+
+.char_s {
+	margin: 5px 180px 5px 15px;
+	width: 90px;
+}
+
+input[type="submit"], input[type="reset"], input[type="button"] {
+	margin: 5px 5px 15px 5px;
+	height: 25px;
+	width: 105px;
+	border-radius: 5px;
+}	
+
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover { 
+    background-color: rgb(188, 188, 188);
+    cursor: pointer;
+	color: white;
+}
+
+select {
+	float: left;
+	margin: 5px 10px 5px 15px;
+	padding: 3px 5px 3px 5px;
+	width: 270px;
+}
+
+table {
+	width: 620px;
+	font-size: .75em;
+	margin: 10px auto;
+	border-collapse: collapse;
+	border: 1px solid #73AD21;
+}
+
+table th {
+	border: 1px solid #73AD21;
+	background-color: rgb(215, 241, 177);
+}
+
+table td {
+	border: 1px dotted #73AD21;
+}
+
+table td:nth-child(3) {
+	text-align: left;
+}
+
+.firstTable td:nth-child(1), .firstTable td:nth-child(2) {
+	color: blue;
+	font-weight: 700;
+	font-size: 1.15em;
+}
+
+.secondTable td:nth-child(6),.secondTable td:nth-child(7) {
+	text-align: right;
+}
+
+.secondTable td:first-child {
+	font-weight: 700;
+}

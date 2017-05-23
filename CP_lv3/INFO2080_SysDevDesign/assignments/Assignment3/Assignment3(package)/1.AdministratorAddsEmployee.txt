@@ -1,0 +1,75 @@
+' AdministratorAddsEmployee.txt
+' PlantUML script to create a sequence diagram
+'
+' Revision History:
+'     Moonjoon Park, 2016.10.07: Created
+
+@startuml
+
+autonumber
+
+actor Administrator
+participant AddEmployeeForm <<boundary>>
+participant EmployeeController <<control>>
+participant Employee <<entity>>
+participant EmployeeType <<enumeration>>
+participant Location <<entity>>
+participant Department <<entity>>
+participant Position <<entity>>
+participant EmployeeDataAccess <<data access>>
+database ITSD
+
+title Administrator Adds Employee
+
+Administrator -> AddEmployeeForm : addNewEmployee
+
+AddEmployeeForm -> EmployeeController : addNewEmployee
+
+EmployeeController --> Employee : createEmployee
+
+activate Employee
+
+Employee --> EmployeeController : employee
+
+EmployeeController <-> EmployeeType : retrieveEmployeeTypeList
+
+EmployeeController <-> EmployeeDataAccess : retrieveLocatoinList
+note right : Retrieve from the ITSD database
+
+activate Location
+
+EmployeeController <-> EmployeeDataAccess : retrieveDepartmentList
+note right : Retrieve from the ITSD database
+
+activate Department
+
+EmployeeController <-> EmployeeDataAccess : retrievePositionList
+note right : Retrieve from the ITSD database
+
+activate Position
+
+EmployeeController -> AddEmployeeForm : updateDisplay
+
+AddEmployeeForm -> Administrator : displayItemList
+
+Administrator -> AddEmployeeForm : selectItemList
+
+Administrator -> AddEmployeeForm : enterEmployeeInformation
+
+AddEmployeeForm -> EmployeeController : enterEmployeeInformation
+
+alt employee is a requester
+ref over EmployeeController, Employee: Add Requester
+
+else employee is a agent
+ref over EmployeeController, Employee: Add Agent 
+
+end
+
+EmployeeController -> EmployeeDataAccess : saveEmployeeInformation
+
+EmployeeDataAccess -> ITSD : insertEmployee
+
+Administrator -> AddEmployeeForm : terminateAddNewEmployee
+
+@enduml

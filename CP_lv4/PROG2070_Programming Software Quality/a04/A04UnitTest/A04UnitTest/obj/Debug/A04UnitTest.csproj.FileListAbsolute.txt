@@ -1,0 +1,11 @@
+G:\CP_lv4\PROG2070_Programming Software Quality\a04\A04UnitTest\A04UnitTest\bin\Debug\A04UnitTest.dll
+G:\CP_lv4\PROG2070_Programming Software Quality\a04\A04UnitTest\A04UnitTest\bin\Debug\A04UnitTest.pdb
+G:\CP_lv4\PROG2070_Programming Software Quality\a04\A04UnitTest\A04UnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+G:\CP_lv4\PROG2070_Programming Software Quality\a04\A04UnitTest\A04UnitTest\bin\Debug\nunit.framework.dll
+G:\CP_lv4\PROG2070_Programming Software Quality\a04\A04UnitTest\A04UnitTest\bin\Debug\WebDriver.dll
+G:\CP_lv4\PROG2070_Programming Software Quality\a04\A04UnitTest\A04UnitTest\bin\Debug\WebDriver.Support.dll
+G:\CP_lv4\PROG2070_Programming Software Quality\a04\A04UnitTest\A04UnitTest\bin\Debug\nunit.framework.xml
+G:\CP_lv4\PROG2070_Programming Software Quality\a04\A04UnitTest\A04UnitTest\bin\Debug\WebDriver.xml
+G:\CP_lv4\PROG2070_Programming Software Quality\a04\A04UnitTest\A04UnitTest\bin\Debug\WebDriver.Support.xml
+G:\CP_lv4\PROG2070_Programming Software Quality\a04\A04UnitTest\A04UnitTest\obj\Debug\A04UnitTest.dll
+G:\CP_lv4\PROG2070_Programming Software Quality\a04\A04UnitTest\A04UnitTest\obj\Debug\A04UnitTest.pdb

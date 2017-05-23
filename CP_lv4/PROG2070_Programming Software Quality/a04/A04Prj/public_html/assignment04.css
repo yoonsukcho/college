@@ -1,0 +1,111 @@
+/* CSS file for assignment 4, Yoonsuk Cho #7135551 */
+
+
+html {
+	background-color: rgb(123, 123, 123);
+	color: #FFF;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300; 
+	font-size: 14px;
+}
+
+form {
+	margin: 10px auto; 
+	width: 800px;	
+}
+
+h2, h1 {
+	text-align: center;
+}
+
+#sellerImg {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    display: block;
+
+}
+
+#testBtn, #testBtn2, #inputPage, #listPage {
+	width: 100px;
+	text-align: center;
+	margin: 10px auto; 
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background-color: rgb(98, 98, 98);
+
+}
+#testBtn:hover, #testBtn2:hover, #inputPage:hover, #listPage:hover { 
+    background-color: yellow;
+    background-color: rgb(78, 78, 78);
+    cursor: pointer;
+}
+
+input[type=text] {
+	width: 225px;
+}
+
+
+#Email {
+	width: 325px;
+}
+
+sup {
+	color: red;
+}
+
+#Height, #Weight {
+	text-align: right;
+	width: 70px;
+}
+
+#PostalCode {
+	width: 60px;
+}
+
+table {
+	margin: 20px auto; 
+	/*border: 1px solid #ddd;*/
+	width: 600px;
+}
+
+#inputTable td {
+	/*border: 1px solid #ddd;*/
+	background-color: rgb(78, 78, 78);
+}
+
+#inputTable td:nth-of-type(1) {
+	width: 200px;
+	font-weight: 300; 
+	padding: 7px 15px 7px 7px;
+}
+
+#inputTable td:nth-of-type(2) {
+	padding-left: 10px;
+}
+
+#listTable td {
+	padding: 7px 15px 7px 7px;
+}
+
+#listTable tr:nth-of-type(1){
+    width: 220px;
+    text-align: center;
+	font-weight: 600; 
+	padding: 7px 15px 7px 7px;
+    background-color: rgb(35, 35, 35);
+}
+
+#listTable tr:nth-of-type(n+2) {
+	width: 200px;
+	font-weight: 300; 
+	padding: 7px 15px 7px 7px;
+    background-color: rgb(78, 78, 78);
+}
+
+#extSite {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    display: block;
+}

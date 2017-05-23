@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<!-- PROG1800 Sec2 , Assignment 1, Jan. 21, 2016. Yoonsuk Cho #7135551 -->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>Assignment 01</title>
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<script type="text/javascript">
+		// request to input numbers with prompt
+		function getNumbers() {
+			var inputValue = 0;
+			var count_o = 0;
+			var count_e = 0;
+			var avg_o = 0.0;
+			var avg_e = 0.0;
+			var sum_o = 0.0;
+			var sum_e = 0.0;
+			var txt_o = "";
+			var txt_e = "";
+			var isContinue = true;
+			while(isContinue) {
+				inputValue = prompt("Enter a score or enter -999 when you're finished:"," ");
+				if (inputValue == 0) {
+					alert("'0' is not allowed!"); 
+					continue;
+				}
+				if (isNaN(inputValue) || inputValue == null) {
+					alert("Only number is allowed!"); 
+					continue;
+				}
+				if (inputValue == -999) {
+					isContinue = false;
+					continue;
+				}
+				inputValue = parseInt(inputValue);
+				if (inputValue%2 == 0) {
+					sum_e += inputValue;
+					count_e++;
+					txt_e += addCommas(inputValue) + " &nbsp;&nbsp;";
+				} else {
+					sum_o += inputValue;
+					count_o++;
+					txt_o += addCommas(inputValue) + " &nbsp;&nbsp;";
+				}
+			}
+			if (count_o != 0) {
+				avg_o = sum_o / count_o;
+				avg_o = Math.round(avg_o * 1000) / 1000;
+			}
+			if (count_e != 0) {
+				avg_e = sum_e / count_e;
+				avg_e = Math.round(avg_e * 1000) / 1000;
+			}
+			document.getElementById("p_odd").innerHTML = txt_o;
+			document.getElementById("p_even").innerHTML = txt_e;
+			document.getElementById("p_odd_sum").innerHTML = addCommas(sum_o);
+			document.getElementById("p_even_sum").innerHTML = addCommas(sum_e);
+			document.getElementById("p_odd_avg").innerHTML = addCommas(avg_o);
+			document.getElementById("p_even_avg").innerHTML = addCommas(avg_e);
+		}
+
+		function addCommas(nStr)
+		{
+			nStr += '';
+			x = nStr.split('.');
+			x1 = x[0];
+			x2 = x.length > 1 ? '.' + x[1] : '';
+			var rgx = /(\d+)(\d{3})/;
+			while (rgx.test(x1)) {
+				x1 = x1.replace(rgx, '$1' + ',' + '$2');
+			}
+			return x1 + x2;
+		}	
+		
+	</script>
+
+	<style>
+		html {
+			background-image: url("chalkboard_texture.jpg");	
+		}
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			font-family: 'Indie Flower', cursive, sans-serif;
+			text-align: center;
+			margin: 50px auto; 
+			width: 804px;
+			color: white;
+			text-shadow: rgb(0, 0, 0) 1px 1px 0px;
+		}
+		
+		.button {
+			background-color: #555555;
+			border: 1px solid white;
+			color: white;
+			padding: 12px 22px;
+			text-align: center;
+			display: inline-block;
+			font-size: 25px;
+			margin: 4px 2px;
+			cursor: pointer;
+			border-radius: 15px;
+			font-family: 'Indie Flower', cursive, sans-serif;
+		}
+		
+		.button:hover {
+			background-color: #676767; /* Green */
+			color: white;
+			font-family: 'Indie Flower', cursive, sans-serif;
+		}
+
+		#div_button {
+			width: 800px;
+		}
+
+		section table {
+			width: 800px;
+			margin-top: 15px;
+		}	
+		section table thead {
+			height:28pt;
+			font-size: 180%;
+			margin-top: 5px;
+			background-color: rgba(145, 145, 145, 0.4);
+		}
+
+		section table tbody td {
+			font-size: 180%;
+			height: 180px;
+		}
+
+		section table td {
+			width: 250px;
+			border: solid 0px;
+			padding: 6px 6px 6px 6px;
+			height:25px;
+			background-color: rgba(75, 75, 75, 0.4);
+		}
+		
+		section table tfoot {
+			font-size: 180%;
+			margin-top: 5px;
+			background-color: rgba(105, 105, 105, 0.4);
+			text-align: right;
+		}
+
+		#p_odd_avg, #p_even_avg, #p_odd_sum, #p_even_sum {
+			padding-right: 35px;
+		}
+		
+		td:nth-of-type(1) {
+			margin-top: 5px;
+			background-color: rgba(105, 105, 105, .75);
+			width:65px;
+			text-align: center;
+		}
+				
+	</style>
+</head>
+
+<body>
+<div id="div_button">
+	<input type="button" class="button" onclick="getNumbers();" value="Input Numbers!!"  />
+</div>
+
+<section>
+	<table>
+		<thead>
+			 <tr>
+				<td>
+					<p></p>
+				</td>
+				<td>
+					<p>ODD</p>
+				</td>
+				<td>
+					<p>EVEN</p>
+				</td>
+			 </tr>
+		</thead>
+		<tbody>
+			 <tr>
+				<td>
+					<p>Members</p>
+				</td>
+				<td>
+					<p id="p_odd" ></p>
+				</td>
+				<td>
+					<p id="p_even" ></p>
+				</td>
+			 </tr>
+		</tbody>
+		<tfoot>
+			 <tr>
+				<td>
+					<p>Summary</p>
+				</td>
+				<td>
+					<p id="p_odd_sum" ></p>
+				</td>
+				<td>
+					<p id="p_even_sum" ></p>
+				</td>
+			 </tr>
+			 <tr>
+				<td>
+					<p>Average</p>
+				</td>
+				<td>
+					<p id="p_odd_avg" ></p>
+				</td>
+				<td>
+					<p id="p_even_avg" ></p>
+				</td>
+			 </tr>
+		</tfoot>
+	</table>
+</section>
+
+</body>
+</html>

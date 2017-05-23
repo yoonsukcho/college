@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<title> Image Manipulations </title>
+
+<link rel="stylesheet" type= "text/css" href = "styles/main.css"/>
+</head>
+<body> 
+
+<h1> Shape Demo</h1>
+ 
+	<button class = "circle">Circle </button>
+	<button class = "reset">Reset </button>
+
+	<img src ="images/everest.jpg" alt = "everest" class = "ti"/>
+
+	
+
+
+
+
+<script type="text/javascript" src="js/jquery-2.2.0.js"></script>
+<script type="text/javascript">
+
+  
+		
+		
+		//alter shape
+		
+		//CIRCLE
+		
+		var pic = $('.ti');
+		var c = 0;
+		$('.circle').click(function(){
+		c += 1;
+		 if (c%2 != 0)
+		 {
+		    pic.css("border-radious", "75px");         
+		  }
+		 
+		 else
+		  {
+		    pic.css("border-radious", "0px");         
+         }
+		
+		});
+		
+		//Filter
+		
+		
+		
+		//Reset Button
+		var i = 0;	
+	
+		$('.reset').click(function(){
+	
+		});
+
+
+
+
+</script>
+</body>
+
+
+</html>

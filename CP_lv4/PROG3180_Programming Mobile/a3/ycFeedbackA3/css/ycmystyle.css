@@ -1,0 +1,72 @@
+/*!
+* Assignment3 ycmystyle.css
+*
+* #7135551 Yoonsuk Cho
+* Created on : Mar 06, 2017, 9:06:36 AM
+* Revised on : Mar 27, 2017
+* PROG3180 Assignment 03
+*/
+
+#myImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+}
+
+#ycBtnCancel {
+    background-color: #ffff00;
+    border-color: rgba(223, 220, 51, 0.6);
+    color: #000000;
+    text-shadow: 0 1px 0 #dddddd;
+
+}
+
+#ycBtnCancel:hover  {
+    background-color: #eeee00;
+    border-color: #eeee00;
+}
+
+#ycBtnCancel:active {
+    color: #000000;
+    text-shadow: 0 2px 0 #ffff00;
+    box-shadow: 0 0 3px 5px rgba(51,136,204,.2);
+}
+
+
+.ycBtnBlue {
+    background-color: #3388cc !important;
+    border-color: #3388cc !important;
+    color: #ffffff !important;
+    text-shadow: 0 1px 0 #444444 !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+
+.ycBtnBlue:hover  {
+    background-color: #22aadd !important;
+    border-color: #22aadd !important;
+}
+
+.ycBtnBlue:active {
+    color: #000000 !important;
+    text-shadow: 0 2px 0 #cccccc !important;
+}
+
+/*
+#ycBizName, #ycRevEmail, #ycEditBizName, #ycEditRevEmail, #ycDefaultEmail {
+    background: white url("../img/27b0.png") right no-repeat;
+    background-size: 18px;
+    padding-right: 2px;
+}
+*/
+
+label.error{
+    color: #F00;
+    font-weight: bold;
+}
+
+input.error,
+select.error,
+textarea.error {
+    border: 1px red solid;
+}

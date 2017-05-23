@@ -1,0 +1,14 @@
+G:\CP_lv3\PROG2370_ProgOOG\assmnt1\YChoAssignment1\YChoAssignment1\YChoAssignment1\bin\Debug\YChoAssignment1.exe.config
+G:\CP_lv3\PROG2370_ProgOOG\assmnt1\YChoAssignment1\YChoAssignment1\YChoAssignment1\bin\Debug\YChoAssignment1.exe
+G:\CP_lv3\PROG2370_ProgOOG\assmnt1\YChoAssignment1\YChoAssignment1\YChoAssignment1\bin\Debug\YChoAssignment1.pdb
+G:\CP_lv3\PROG2370_ProgOOG\assmnt1\YChoAssignment1\YChoAssignment1\YChoAssignment1\obj\Debug\YChoAssignment1.csprojResolveAssemblyReference.cache
+G:\CP_lv3\PROG2370_ProgOOG\assmnt1\YChoAssignment1\YChoAssignment1\YChoAssignment1\obj\Debug\MainWindow.g.cs
+G:\CP_lv3\PROG2370_ProgOOG\assmnt1\YChoAssignment1\YChoAssignment1\YChoAssignment1\obj\Debug\App.g.cs
+G:\CP_lv3\PROG2370_ProgOOG\assmnt1\YChoAssignment1\YChoAssignment1\YChoAssignment1\obj\Debug\YChoAssignment1_MarkupCompile.cache
+G:\CP_lv3\PROG2370_ProgOOG\assmnt1\YChoAssignment1\YChoAssignment1\YChoAssignment1\obj\Debug\YChoAssignment1_MarkupCompile.lref
+G:\CP_lv3\PROG2370_ProgOOG\assmnt1\YChoAssignment1\YChoAssignment1\YChoAssignment1\obj\Debug\MainWindow.baml
+G:\CP_lv3\PROG2370_ProgOOG\assmnt1\YChoAssignment1\YChoAssignment1\YChoAssignment1\obj\Debug\YChoAssignment1.g.resources
+G:\CP_lv3\PROG2370_ProgOOG\assmnt1\YChoAssignment1\YChoAssignment1\YChoAssignment1\obj\Debug\YChoAssignment1.Properties.Resources.resources
+G:\CP_lv3\PROG2370_ProgOOG\assmnt1\YChoAssignment1\YChoAssignment1\YChoAssignment1\obj\Debug\YChoAssignment1.csproj.GenerateResource.Cache
+G:\CP_lv3\PROG2370_ProgOOG\assmnt1\YChoAssignment1\YChoAssignment1\YChoAssignment1\obj\Debug\YChoAssignment1.exe
+G:\CP_lv3\PROG2370_ProgOOG\assmnt1\YChoAssignment1\YChoAssignment1\YChoAssignment1\obj\Debug\YChoAssignment1.pdb

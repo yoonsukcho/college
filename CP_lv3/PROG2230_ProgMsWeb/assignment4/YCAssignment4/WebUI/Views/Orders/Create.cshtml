@@ -1,0 +1,63 @@
+@model WebUI.Models.Orders
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<form asp-action="Create">
+    <div class="form-horizontal">
+        <h4>Orders</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="custName" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="custName" class="form-control" />
+                <span asp-validation-for="custName" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="OrderEmail" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="OrderEmail" class="form-control" />
+                <span asp-validation-for="OrderEmail" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="custAddress" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="custAddress" class="form-control" />
+                <span asp-validation-for="custAddress" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="deliveryDate" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="deliveryDate" class="form-control"  type="datetime-local" />
+                <span asp-validation-for="deliveryDate" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="paymentMethod" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="paymentMethod" class="form-control" />
+                <span asp-validation-for="paymentMethod" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

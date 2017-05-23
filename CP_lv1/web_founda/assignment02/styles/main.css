@@ -1,0 +1,179 @@
+html {
+	background-image: url("../images/beach-12.jpg");	
+}
+body  {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	width: 1000px;
+	background-color: rgba(255, 255, 255, 0);
+	margin: 0 auto; 
+	padding: 0;
+	color: white;
+	text-align: center;
+}
+h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+header { 
+	background-color: white;
+	color: rgb(22, 196, 212);
+	text-align: center;
+	text-shadow: none;
+	height: 85px;
+} 
+header img { 
+	/* margin-top: -10px;*/
+	margin-left: -70px;
+	margin-bottom: -20px;
+} 
+header h2 {
+	font-size: 180%;
+	font-weight: 800;
+	margin-bottom: .25em;
+}
+header h3 {
+	font-size: 110%;
+	font-weight: 600;
+}
+
+/* Navigation menu */
+#nav_menu {
+	clear: left;
+	text-align: center;
+	background: rgb(22, 196, 212);
+	height: 28px;
+	font-weight: 400;
+}
+#nav_menu ul {
+	list-style: none;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	display: inline-block; 
+}
+#nav_menu ul li {
+	float: left;
+}
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+#nav_menu ul ul ul{
+	display: none;
+	position: absolute;
+	top: 50%;
+	right: -100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+#nav_menu ul li a {
+	background-color: rgb(22, 196, 212);
+	color: white;
+	display: block;
+	font-family: 'Open Sans', sans-serif;
+	font-size: .9em;
+	padding: .3em 0;
+	text-align: center;
+	text-decoration: none;
+	width: 160px;
+}
+#nav_menu ul li a.current {
+	color: rgb(170, 231, 227);
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+	background-color: rgb(55, 206, 220);
+}
+
+/* Sidebar */
+#sideleft {
+	float: left; 
+	width: 200px;
+}
+#sideright {
+	float: right; 
+	width: 200px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	text-align: left;
+	text-shadow: rgb(0, 0, 0) 1px 1px 0px;
+}
+#sideright h3{
+	margin-top: 2.5em;
+	margin-bottom: 1em;
+}
+
+#sideright p{
+	font-size: .85em;
+	font-weight: 600;
+    text-shadow: rgb(0, 0, 0) 1px 2px 2px;
+}
+
+#nav_list ul { 
+	list-style: none;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+#nav_list ul li { 
+	margin-top: 2.5em;
+	margin-bottom: 2.5em;
+}
+#nav_list ul li a img { 
+	margin-top: -5px;
+	margin-right: 5px;
+	margin-bottom: -7px;
+}
+#nav_list ul li a {
+	font-weight: 400;
+	background-color: rgb(22, 196, 212);
+	color: white;
+	display: block;
+	font-size: 0.9em;
+	padding: .5em .5em .5em .5em;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+#nav_list ul li a img.thumb_img {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 0px;
+}
+
+/* Section */
+section {
+	width: 560px;
+	height: 585px;
+	float: left;
+	padding: 20px 20px 20px 20px;	
+	font-weight: bold;
+	text-shadow: rgb(0, 0, 0) 1px 1px 0px;
+}
+
+
+/* Footer */
+footer { 
+	clear: both;
+	padding: 15px;
+	background-color: rgb(22, 196, 212);
+} 
+footer p {
+	font-size: 90%;
+	text-align: center;
+	font-weight: 700;
+	text-shadow: rgb(135, 135, 135) 1px 1px 0px;
+}

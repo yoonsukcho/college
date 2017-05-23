@@ -1,0 +1,30 @@
+1. The agent opens the add an information of requester
+2. The system displays an input form
+3. The agent enters employee number, first name, last name, position, department, location, work email and work phone number
+4. The agent enters the employee's position, department, and location
+5. The agent enters the 7 digits employee number which is created by  the Human Resources department when an employee is hired
+6. The agent enters work email address, private email address, work phone number( + extension number), personal phone number and mailing address
+7. The agent enters employee type, employee status, birth date, hire date and termination date
+8. The values for employee type are co-op(C), full-time(F), part-time(P) and temporary(T)
+9. The values for employee status are active(A), on leave(L) and retired(R)
+10. The agent enters service tier and the team or teams the employee is on. Each IT employee will be on at least one specialist team
+11. The service tier is as follows
+        1 Service Desk Function, 2 Technical Management Function, 3 Application Management Function, 4 Third Party Suppliers
+12. The service desk positions are as follows
+        7 Junior Service Desk Agent, 8 Service Desk Agent, 9 Senior Service Desk Agent, 10 Service Desk Supervisor, 11 Network Administrator, 12 Database Administrator, 13 Web Administrator, 14 Telecom Specialist, 15 Hardware Specialist, 16 Senior Computer Technician, 17 Computer Technician, 18 Project Coordinator, 19 Systems Analyst, 20 Senior Programmer Analyst, 21 Programmer Analyst, 22 Programmer
+13. The service teams are as follows
+        1 Incident Management Team, 2 Capacity Management Team, 3 Change Management Team, 4 Database Management Team, 5 Hardware Management Team, 6 Major Incident Management Team, 7 Problem Management Team, 8 Release Management Team, 9 Service Design Team, 10 Service Request Fulfilment Team, 11 Supplier Management Team
+14. The agent enters the employee role and scope
+15. The roles are as follows
+        1 Account Admin, 2 Admin, 3 SD Supervisor, 4 SD Agent, 5 Problem Manager, 6 Change Manager, 7 Release Manager, 8 Configuration Manager
+16. The scopes are as follows
+        1 Restricted Access, 2 Global access, 3 Team Access
+17. The agent can enter the notes about the employee and the name of an image file with a picture of the employee optionally
+18. 
+
+
+
+
+
+
+

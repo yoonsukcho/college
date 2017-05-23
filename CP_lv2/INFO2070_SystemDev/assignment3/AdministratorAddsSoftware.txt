@@ -1,0 +1,57 @@
+' AdministratorAddsSoftware.txt
+' PlantUML script to create a system sequence diagram
+'
+' Revision History:
+'     ycho, 2016.02.26: Created
+
+@startuml
+
+
+actor Administrator
+participant System
+
+activate Administrator
+activate System
+
+Title Administrator Adds Software
+
+Administrator -> System : initiateAddingSoftware
+
+System --> Administrator : displayListOfSoftwareTypes
+
+Administrator -> System : selectSoftwareType
+
+System --> Administrator : displayListOfSoftwareCategories
+
+Administrator -> System : selectSoftwareCategory
+
+System --> Administrator : displayListOfBusinessImpacts
+
+Administrator -> System : selectBusinessImpact
+
+System --> Administrator : displayListOfLicenseTypes
+
+Administrator -> System : selectLicenseType
+
+opt Customer Access License
+
+System --> Administrator : displayCALTypes
+
+Administrator -> System : selectCALType
+
+System --> Administrator : displayListOfLicenseOptions
+
+Administrator -> System : selectLicenseOption
+
+end
+
+Administrator -> System : saveSoftwareRecord
+
+System -> System : persistSoftwareRecord
+
+Administrator -> System : terminateAddingSoftware
+
+@enduml
+
+
+

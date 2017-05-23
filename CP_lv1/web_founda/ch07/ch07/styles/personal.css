@@ -1,0 +1,10 @@
+/*
+This css for personal/index.html
+*/
+section h1:first-letter { 
+	font-size: 100%;
+}
+
+section object {
+	align: left;
+}

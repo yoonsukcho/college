@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<!-- PROG1800 Sec2 , Assignment 4, 10 March 2016. Yoonsuk Cho #7135551 -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8" />
+		<title>Assignment 04 - Order</title>
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script src="simpleCart/simpleCart.js"></script>
+		<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' >
+		<link rel="stylesheet" href="css/main.css">
+		<script>
+			a  = ["1", "2"];
+			alert(a[0]);
+			
+		</script>
+	</head>
+	<body>
+		<div id="all_frame">
+
+			<table id="orderForm">
+				<thead>
+					 <tr>
+						<td colspan="2">
+							<h2><p>Customer Information</p></h2>
+						</td>
+					 </tr>
+				</thead>
+				<tbody>
+					 <tr>
+						<td>
+							<p>Name</p>
+						</td>
+						<td>
+							<p><input type="text" name="fname" id="fname" />
+							<input type="text" name="lname" id="lname" /></p>
+						</td>
+					 </tr>
+					 <tr>
+						<td>
+							<p>e-mail</p>
+						</td>
+						<td>
+							<p id="p_odd" ><input type="text" name="email" id="email" /></p>
+						</td>
+					 </tr>
+					 <tr>
+						<td>
+							<p>Street</p>
+						</td>
+						<td>
+							<p><input type="text" name="street" id="street" />
+						</td>
+					 </tr>
+					 <tr>
+						<td>
+							<p>City</p>
+						</td>
+						<td>
+							<p><input type="text" name="city" id="city" />
+						</td>
+					 </tr>
+					 <tr>
+						<td>
+							<p>Province</p>
+						</td>
+						<td>
+							<select id="province" name="province">
+							  <option value="AB">Alberta</option>
+							  <option value="BC">British Columbia</option>
+							  <option value="MB">Manitoba</option>
+							  <option value="NB">New Brunswick</option>
+							  <option value="NL">Newfoundland and Labrador</option>
+							  <option value="NS">Nova Scotia</option>
+							  <option value="NT">Northwest Territories</option>
+							  <option value="NU">Nunavut</option>
+							  <option value="ON" selected>Ontario</option>
+							  <option value="PE">Prince Edward Island</option>
+							  <option value="QC">Quebec</option>
+							  <option value="SK">Saskatchewan</option>
+							  <option value="YT">Yukon</option>
+							</select>
+						</td>
+					 </tr>
+					 <tr>
+						<td>
+							<p>Postal Code</p>
+						</td>
+						<td>
+							<p><input type="text" name="postal" id="postal"  maxlength="6"/>
+						</td>
+					 </tr>
+				</tbody>
+				<tfoot>
+				</tfoot>
+			</table>	
+			<br><br>
+			<div class="simpleCart_shelfItem">
+				<div class="div_item_thumb"><img src="/img/pop_org.png" class="item_thumb" /></div>
+				<h2 class="item_name"> Fruit popsicle </h2>
+				<div class="div_item_etc">
+					<select class="item_option">
+						<option value="Purple"> Purple </option>
+						<option value="Red"> Red </option>
+						<option value="Orange"> Orange </option>
+						<option value="Green"> Green </option>
+						<option value="Blue"> Blue </option>
+					</select>&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="text" value="1" class="item_Quantity">&nbsp;&nbsp;&nbsp;&nbsp;
+					<span class="item_price">$3.99</span>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a class="item_add" href="javascript:;"> Add to Cart </a>
+				</div>
+			</div>
+			<br>
+			<div class="simpleCart_shelfItem">
+				<div class="div_item_thumb"><img src="/img/pop_ch_star.png" class="item_thumb" /></div>
+				<h2 class="item_name"> Choco popsicle </h2>
+				<div class="div_item_etc">
+					<select class="item_option">
+						<option value="Star"> Star </option>
+						<option value="Moon"> Moon </option>
+						<option value="House"> House </option>
+					</select>&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="text" value="1" class="item_Quantity">&nbsp;&nbsp;&nbsp;&nbsp;
+					<span class="item_price">$4.99</span>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a class="item_add" href="javascript:;"> Add to Cart </a>
+				</div>
+			</div>	
+			<div class="btns"><a href="javascript:;" class="simpleCart_empty">Clear Cart</a></div>
+			
+			<div class="simpleCart_items"></div><br>
+			Total Price: <span class="simpleCart_total"></span><br>
+			Item counts: <span class="simpleCart_quantity"></span><br>
+			Tax: <span class="simpleCart_tax"></span><br>
+			<!--Tax rate: <span class="simpleCart_taxRate"></span><br>-->
+			Shipping fee: <span class="simpleCart_shipping"></span><br>
+			Grand Total Price: <span class="simpleCart_grandTotal"></span>
+			<br>
+			<div class="btns"><a href="javascript:;" class="simpleCart_checkout">Submit</a></div>
+
+		</div>
+		<script src="js/order.js"></script>
+	</body>
+</html>

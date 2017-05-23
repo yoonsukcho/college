@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<!-- PROG1800 Sec2 , Assignment 2, Feb. 4, 2016. Yoonsuk Cho #7135551 -->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Assignment 02</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="assignment02.js"></script>
+    <link rel="stylesheet" type="text/css" href="assignment02.css">
+</head>
+<body onLoad="initSelect();">
+    <form id="form" name="form" action="http://404.elbrightness.com/PROG1800/printresult.php" method="POST">
+    <br />
+      <h2>Assignment 2, Feb. 4, 2016, Yoonsuk Cho #7135551</h2>
+        <table>
+            <tr>
+                <td>Surname<sup class="man">*</sup></td>
+                <td><input type="text" id="Surname" name="Surname" onblur="makeTrim('Surname');"></td>
+            </tr>
+            <tr>
+                <td>Given name(s)<sup class="man">*</sup></td>
+                <td><input type="text" id="Givenname" name="Givenname"  onblur="makeTrim('Givenname');"></td>
+            </tr>
+            <tr>
+                <td>Email address<sup class="man">*</sup></td>
+                <td><input type="text" id="Email" name="Email" onblur="makeTrim('Email');"></td>
+            </tr>
+            <tr>
+                <td>Date of birth (Year/Month/Day)</td>
+                <td>
+
+                    <select id="Year" name="Year" onChange="setDays(form.Year.value, form.Month.value);">
+                    </select> /
+
+                    <select id="Month" name="Month" onChange="setDays(form.Year.value, form.Month.value);">
+                       <option value="1" selected>January</option>
+                       <option value="2">Feburary</option>
+                       <option value="3">March</option>
+                       <option value="4">April</option>
+                       <option value="5">May</option>
+                       <option value="6">June</option>
+                       <option value="7">July</option>
+                       <option value="8">August</option>
+                       <option value="9">September</option>
+                       <option value="10">October</option>
+                       <option value="11">November</option>
+                       <option value="12">December</option>
+                    </select> /
+
+                    <select id="Day" name="Day">
+                    </select>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Place of birth city<sup class="man">*</sup></td>
+                <td><input type="text" id="BirthCity" name="BirthCity" onblur="makeTrim('BirthCity');"></td>
+            </tr>
+             <tr>
+                <td>Place of birth country<sup class="man">*</sup></td>
+                <td><input type="text" id="BirthCountry" name="BirthCountry" onblur="makeTrim('BirthCountry');"></td>
+            </tr>
+           <tr>
+                <td>Gender</td>
+                <td>
+                  <input type="radio" name="Gender" value="male" checked> Male 
+                  <input type="radio" name="Gender" value="female"> Female 
+                  <input type="radio" name="Gender" value="other"> Other
+                </td>
+            </tr>
+           <tr>
+                <td>Marital status</td>
+                <td>
+                    <select id="Marital" name="Marital">
+                      <option value="1">Single</option>
+                      <option value="2">Married</option>
+                      <option value="3">Separated</option>
+                      <option value="4">Divorced</option>
+                      <option value="5">Widowed</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Height (cm)</td>
+                <td><input type="text" id="Height"  maxlength="6" name="Height" > cm</td>
+            </tr>
+            <tr>
+                <td>Weight (kg/lbs)</td>
+                <td><input type="text" id="Weight"  maxlength="6" name="Weight" > kg</td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><input type="text" id="Address" name="Address" maxlength="50" onblur="makeTrim('Address');"></td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td><input type="text" id="City" name="City" maxlength="50" onblur="makeTrim('City');"></td>
+            </tr>
+            <tr>
+                <td>Province/Territory</td>
+                <td>
+                    <select id="Province" name="Province">
+                      <option value="AB">Alberta</option>
+                      <option value="BC">British Columbia</option>
+                      <option value="MB">Manitoba</option>
+                      <option value="NB">New Brunswick</option>
+                      <option value="NL">Newfoundland and Labrador</option>
+                      <option value="NS">Nova Scotia</option>
+                      <option value="NT">Northwest Territories</option>
+                      <option value="NU">Nunavut</option>
+                      <option value="ON" selected>Ontario</option>
+                      <option value="PE">Prince Edward Island</option>
+                      <option value="QC">Quebec</option>
+                      <option value="SK">Saskatchewan</option>
+                      <option value="YT">Yukon</option>
+                    </select>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Postal code</td>
+                <td><input type="text" id="PostalCode" name="PostalCode" maxlength="6" onblur="postUpperCase();"></td>
+            </tr>
+            <tr>
+                <td>Confirm<sup class="man">*</sup></td>
+                <td>
+					<input type="checkbox" id="Confirm" name="Confirm" value="Yes">Yes : I have read and understand this.
+				</td>
+            </tr>			
+        </table>
+      </form>
+    <br />
+    <div id="testBtn" onclick="submitForm();">Submit</div>
+</body>
+</html>

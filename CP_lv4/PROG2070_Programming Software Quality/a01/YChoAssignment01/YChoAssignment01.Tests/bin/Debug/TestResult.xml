@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="G:\CP_lv4\PROG2070_Programming Software Quality\a01\YChoAssignment01\YChoAssignment01.Tests\bin\Debug\YChoAssignment01.Tests.dll" total="4" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2017-02-09" time="16:15:20">
+  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.5485" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.4\bin" machine-name="2A211-D04" user="ycho5551" user-domain="CONESTOGAC" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="G:\CP_lv4\PROG2070_Programming Software Quality\a01\YChoAssignment01\YChoAssignment01.Tests\bin\Debug\YChoAssignment01.Tests.dll" executed="True" result="Success" success="True" time="0.024" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="YChoAssignment01" executed="True" result="Success" success="True" time="0.023" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="0.022" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="SquareTests" executed="True" result="Success" success="True" time="0.019" asserts="0">
+                <results>
+                  <test-case name="YChoAssignment01.Tests.SquareTests.ChangeSideTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="YChoAssignment01.Tests.SquareTests.GetAreaTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="YChoAssignment01.Tests.SquareTests.GetPerimeterTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="YChoAssignment01.Tests.SquareTests.GetSideTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

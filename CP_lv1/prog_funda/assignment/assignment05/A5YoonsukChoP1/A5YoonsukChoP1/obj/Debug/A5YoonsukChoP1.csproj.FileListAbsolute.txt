@@ -1,0 +1,39 @@
+G:\CP_lv1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\bin\Debug\A5YoonsukChoP1.exe.config
+G:\CP_lv1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\bin\Debug\A5YoonsukChoP1.exe
+G:\CP_lv1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\bin\Debug\A5YoonsukChoP1.pdb
+G:\CP_lv1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\A5YoonsukChoP1.csprojResolveAssemblyReference.cache
+G:\CP_lv1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\MainWindow.baml
+G:\CP_lv1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\MainWindow.g.cs
+G:\CP_lv1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\App.g.cs
+G:\CP_lv1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\A5YoonsukChoP1_MarkupCompile.cache
+G:\CP_lv1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\A5YoonsukChoP1.g.resources
+G:\CP_lv1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\A5YoonsukChoP1.Properties.Resources.resources
+G:\CP_lv1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\A5YoonsukChoP1.csproj.GenerateResource.Cache
+G:\CP_lv1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\A5YoonsukChoP1.exe
+G:\CP_lv1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\A5YoonsukChoP1.pdb
+C:\Users\Administrator\Documents\homework\CP_l1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\bin\Debug\A5YoonsukChoP1.exe.config
+C:\Users\Administrator\Documents\homework\CP_l1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\A5YoonsukChoP1.exe
+C:\Users\Administrator\Documents\homework\CP_l1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\A5YoonsukChoP1.pdb
+C:\Users\Administrator\Documents\homework\CP_l1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\bin\Debug\A5YoonsukChoP1.exe
+C:\Users\Administrator\Documents\homework\CP_l1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\bin\Debug\A5YoonsukChoP1.pdb
+C:\Users\Administrator\Documents\homework\CP_l1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\A5YoonsukChoP1.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\homework\CP_l1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\MainWindow.baml
+C:\Users\Administrator\Documents\homework\CP_l1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\MainWindow.g.cs
+C:\Users\Administrator\Documents\homework\CP_l1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\App.g.cs
+C:\Users\Administrator\Documents\homework\CP_l1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\A5YoonsukChoP1_MarkupCompile.cache
+C:\Users\Administrator\Documents\homework\CP_l1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\A5YoonsukChoP1.g.resources
+C:\Users\Administrator\Documents\homework\CP_l1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\A5YoonsukChoP1.Properties.Resources.resources
+C:\Users\Administrator\Documents\homework\CP_l1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\A5YoonsukChoP1.csproj.GenerateResource.Cache
+c:\Users\Yoonsuk Cho\Downloads\college\CP_lv1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\bin\Debug\A5YoonsukChoP1.exe.config
+c:\Users\Yoonsuk Cho\Downloads\college\CP_lv1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\A5YoonsukChoP1.exe
+c:\Users\Yoonsuk Cho\Downloads\college\CP_lv1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\A5YoonsukChoP1.pdb
+c:\Users\Yoonsuk Cho\Downloads\college\CP_lv1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\bin\Debug\A5YoonsukChoP1.exe
+c:\Users\Yoonsuk Cho\Downloads\college\CP_lv1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\bin\Debug\A5YoonsukChoP1.pdb
+c:\Users\Yoonsuk Cho\Downloads\college\CP_lv1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\A5YoonsukChoP1.csprojResolveAssemblyReference.cache
+c:\Users\Yoonsuk Cho\Downloads\college\CP_lv1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\MainWindow.baml
+c:\Users\Yoonsuk Cho\Downloads\college\CP_lv1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\MainWindow.g.cs
+c:\Users\Yoonsuk Cho\Downloads\college\CP_lv1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\App.g.cs
+c:\Users\Yoonsuk Cho\Downloads\college\CP_lv1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\A5YoonsukChoP1_MarkupCompile.cache
+c:\Users\Yoonsuk Cho\Downloads\college\CP_lv1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\A5YoonsukChoP1.g.resources
+c:\Users\Yoonsuk Cho\Downloads\college\CP_lv1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\A5YoonsukChoP1.Properties.Resources.resources
+c:\Users\Yoonsuk Cho\Downloads\college\CP_lv1\prog_funda\assignment\assignment05\A5YoonsukChoP1\A5YoonsukChoP1\obj\Debug\A5YoonsukChoP1.csproj.GenerateResource.Cache

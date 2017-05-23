@@ -1,0 +1,73 @@
+@model IEnumerable<WebUI.Models.Products>
+
+
+@{
+    ViewData["Title"] = "Product List";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<div class="col-md-12">
+
+    @foreach (var item in Model)
+    {
+        <div class="row">
+            <div class="col-sm-4">
+                <dl>
+                    <dd>
+                        <a asp-action="Details" asp-route-id="@item.productID">
+                            <img class="productThumb" src="~/images/@item.productImage" />
+                        </a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-xs-4">
+                    <dl>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.productName)
+                        </dt>
+                    </dl>
+                </div>
+                <div class="col-xs-8">
+                    <dl>
+                        <dd>
+                            <a asp-action="Details" asp-route-id="@item.productID">
+                                @Html.DisplayFor(modelItem => item.productName)
+                            </a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-xs-4">
+                    <dl>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.productPrice)
+                        </dt>
+                    </dl>
+                </div>
+                <div class="col-xs-8">
+                    <dl>
+                        <dd>
+                            @Html.DisplayFor(modelItem => item.productPrice)
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <dl>
+                    <dd>
+                        <a asp-action="Edit" asp-route-id="@item.productID">Edit</a> |
+                        <a asp-action="Delete" asp-route-id="@item.productID">Delete</a>
+                    </dd>
+                </dl>
+            </div>
+        </div><!-- end of row -->
+
+    }
+</div>

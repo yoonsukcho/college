@@ -1,0 +1,43 @@
+' Service Desk Employee Adds Requester.txt
+' PlantUML script to create a system sequence diagram
+'
+' Revision History:
+'     Jong Woon Kim, 2016.10.07: Created
+
+@startuml
+
+autonumber
+
+
+actor serviceDeskEmployee
+participant addRequesterForm <<boundary>>
+participant addRequesterController <<control>>
+participant requester <<entity>>
+participant businessImpact <<enumeration>>
+participant requesterDataAccess <<data access>>
+database ITSD
+
+title Service Desk Employee Adds Requester
+
+serviceDeskEmployee -> addRequesterForm : initiateRequesterAdd
+
+addRequesterForm -> addRequesterController : addRequester
+
+addRequesterController <-> businessImpact : retrieveBusinessImpactList
+
+addRequesterController <-> requesterDataAccess :retrieveRequester
+note right : Retrieve from the ITSD database
+
+activate requester
+
+addRequesterController -> addRequesterForm : displayRequesterList
+
+serviceDeskEmployee -> addRequesterForm : selectAppropriateItem
+
+serviceDeskEmployee -> addRequesterForm : enterReqeusterInformation
+
+serviceDeskEmployee -> addRequesterForm : saveReqeusterInformation
+
+addRequesterForm  -> addRequesterController : saveReqeusterInformation
+s
+@enduml

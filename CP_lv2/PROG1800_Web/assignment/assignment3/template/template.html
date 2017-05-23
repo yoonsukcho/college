@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>jQuery UI Menu functionality</title>
+		<!-- jquery javascript and css links -->
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/trontastic/jquery-ui.css">
+
+		<style>
+			<!--nav ul { width: 200px;}-->
+		</style>
+
+		<script>
+			$("nav ul").css("width", "200px");
+			$(function() {
+				$("nav ul").menu();
+			});
+
+			<!-- Javascript -->
+		</script>
+	</head>
+	<body>
+		<!-- HTML --> 
+		<nav>
+			<ul>
+				<li><a href="#">Spring</a></li>
+				<li><a href="#">Hibernate</a></li>
+				<li><a href="#">Java</a>
+					<ul>
+						<li><a href="#">Java IO</a></li>
+						<li><a href="#">Swing</a></li>
+						<li><a href="#">Jaspr Reports</a></li>
+					</ul>
+				</li>
+				<li><a href="#">JSP</a></li>
+				<li><a href="#">HTML5</a></li>
+			</ul>
+		</nav>
+	</body>
+</html>

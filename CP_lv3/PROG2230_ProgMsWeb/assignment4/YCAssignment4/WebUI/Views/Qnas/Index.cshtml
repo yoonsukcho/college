@@ -1,0 +1,66 @@
+@model IEnumerable<WebUI.Models.Qnas>
+@using Microsoft.AspNetCore.Http
+
+@{
+    ViewData["Title"] = "Q & A";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>
+    @if (Context.Session.GetString("Login") == "OK")
+    {
+        <a asp-action="Create">Create New</a>
+    }
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.content)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.createDate)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.view)
+            </th>*@
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model) {
+        string content = (item.content.Length > 10)?item.content.Substring(0, 10) + "......": item.content;
+        <tr>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.qnaId">
+                    @Html.DisplayFor(modelItem => item.title)
+                </a>
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.qnaId">
+                    @content
+                </a>
+
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.createDate)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.view)
+            </td>*@
+    <td>
+            @if (Context.Session.GetString("Login") == "OK")
+            {
+        <a asp-action="Edit" asp-route-id="@item.qnaId">Edit</a> <span>|</span>
+        @*<a asp-action="Details" asp-route-id="@item.qnaId">Details</a> |*@
+                <a asp-action="Delete" asp-route-id="@item.qnaId">Delete</a>
+            }
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

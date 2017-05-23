@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+@using Microsoft.AspNetCore.Http
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <title>@ViewData["Title"] - Login Page</title>
+    <!--our CSS, Script, Font refs go here-->
+    <environment names="Development">
+        <link rel="stylesheet" href="~/lib/semantic/dist/semantic.css" />
+        <link rel="stylesheet" href="~/css/login.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat|Oswald|Passion+One|Playfair+Display|Poiret+One|Roboto+Slab:300" rel="stylesheet">
+    </environment>
+    <environment names="Staging, Production">
+        <link rel="stylesheet" href="~/lib/semantic/dist/semantic.min.css" />
+        <link rel="stylesheet" href="~/css/login.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat|Oswald|Passion+One|Playfair+Display|Poiret+One|Roboto+Slab:300" rel="stylesheet">
+    </environment>
+
+</head>
+<body>
+    <!--sidebar content a mix of Semantic and Bootstrap-->
+    @*<div class="ui visible inverted left vertical sidebar menu">
+                <div class="navbar-header">
+                    <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Yoonsuk's A4 Shop</a>
+                </div>
+    </div>*@
+    <!--fixed navbar-->
+    @if (Context.Session.GetString("Login") == "OK") { 
+
+    <div class="ui top fixed menu">
+        <a class="item" asp-controller="LoggedIn" asp-action="LoggedOut"> Log Out</a>
+    </div>
+    }
+    <!--from cshtml pages-->
+    <div class="pusher">
+        @RenderBody()
+    </div>
+
+    <!--if any longer loading libraries come in, they go here-->
+    <environment names="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/semantic/dist/semantic.js"></script>
+        <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"> </script>
+        <script src="~/js/login.js"></script>
+    </environment>
+    <environment names="Staging, Production">
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/semantic/dist/semantic.min.js"></script>
+        <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"> </script>
+        <script src="~/js/login.js"></script>
+    </environment>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

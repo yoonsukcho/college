@@ -1,0 +1,50 @@
+' AdministratorAddsAgent.txt
+' PlantUML script to create a sequence diagram
+'
+' Revision History:
+'     Moonjoon Park, 2016.10.07: Created
+
+@startuml
+
+autonumber
+
+actor Administrator
+participant AddAgentForm <<boundary>>
+participant AgentController <<control>>
+participant Agent <<entity>>
+participant ServiceTiers <<enumeration>>
+participant ServiceTeam <<entity>>
+participant AgentDataAccess <<data access>>
+database ITSD
+
+title Administrator Adds Agent
+
+Administrator -> AddAgentForm : addNewAgent
+
+AddAgentForm -> AgentController : addNewAgent
+
+AgentController --> Agent : createAgent
+
+activate Agent
+
+Agent --> AgentController : Agent
+
+AgentController <-> ServiceTiers : retrieveServiceTiersList
+
+AgentController <-> AgentDataAccess : retrieveServiceTeamList
+note right : Retrieve from the ITSD database
+
+activate ServiceTeam
+
+AgentController -> AddAgentForm : updateDisplay
+
+AddAgentForm -> Administrator : displayItemList
+
+Administrator -> AddAgentForm : selectItemList
+
+Administrator -> AddAgentForm : enterAgentInformation
+
+AddAgentForm -> AgentController : enterAgentInformation
+
+
+@enduml

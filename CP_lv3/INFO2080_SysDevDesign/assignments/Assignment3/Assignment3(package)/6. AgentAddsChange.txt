@@ -1,0 +1,57 @@
+' AgentAddsChange.txt
+' PlantUML script to create a sequence diagram
+'
+' Revision History:
+'     YCho, 2016.10.07 : Created
+
+@startuml
+
+autonumber
+
+actor Agent
+participant Ticket <<entity>>
+participant ChangeForm <<boundary>>
+participant ChangeController <<control>>
+participant Change <<entity>>
+participant ChangeCategory <<entity>>
+participant ChangeRisk <<enumeration>>
+participant ChangeAccess <<data access>>
+database ITSD 
+
+title Agent Adds Change
+
+Agent -> ChangeForm : initiateChange
+
+activate Ticket
+
+ChangeForm -> ChangeController : addChange
+
+ChangeController --> Change : addChange
+
+Change --> ChangeController : Change
+
+activate Change
+
+ChangeController <-> ChangeAccess : retrieveChangeCategory
+note right : Retrieve from the ITSD database
+
+activate ChangeCategory
+
+ChangeController <-> ChangeRisk : retrieveChangeRisk
+
+activate ChangeRisk
+
+ChangeController -> ChangeForm : updateDisplay
+
+ChangeForm -> Agent : displayInputs
+
+Agent -> ChangeForm : selectChangeCategory
+
+Agent -> ChangeForm : selectChangeRisk
+
+Agent -> ChangeForm : inputChangeinfo
+
+ChangeForm -> Ticket : returnChangeInfo
+
+@enduml
+

@@ -1,0 +1,56 @@
+html {
+	width: 1000px;
+
+}
+
+body
+{
+
+	width:600px;
+
+}
+
+
+
+
+
+button {
+  position: absolute;
+}
+
+
+
+body h1{
+	
+	margin-left: 100px;
+	margin-bottom: 75px;
+
+}
+
+#sec2{
+
+	width: 400px;
+	margin-left: 200px;
+	margin-top: 100px;
+	border: 2px solid black;
+	padding: 40px 40px 40px 40px;
+}
+
+.ti{
+margin-top: 50px;
+  width: 400px;
+  height: 300px;
+}
+
+
+
+.circle{
+margin-left: 100px;
+margin-top: -20px;
+}
+
+
+.reset{
+margin-left: 200px;
+margin-top: -20px;
+}

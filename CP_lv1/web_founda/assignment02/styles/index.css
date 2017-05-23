@@ -1,0 +1,11 @@
+
+/* Section */
+
+#center_title {
+	-webkit-font-smoothing: antialiased;
+	text-align: center;
+    line-height: 1.2;
+    letter-spacing: 0px;
+    font-size: 60px;
+	font-weight: 800;
+}

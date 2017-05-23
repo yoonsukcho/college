@@ -1,0 +1,53 @@
+@model IEnumerable<WebUI.Models.Receipts>
+
+@{
+    ViewData["Title"] = "Receipt List";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.receiptID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.paymentDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.paymentMethod)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+
+            <td>
+                <a asp-action="Details" asp-route-id="@item.receiptID">
+                    @Html.DisplayFor(modelItem => item.receiptID)
+                </a>
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.receiptID">
+                    @Html.DisplayFor(modelItem => item.paymentDate)
+                </a>
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.receiptID">
+                    @Html.DisplayFor(modelItem => item.paymentMethod)
+                </a>
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.receiptID">Edit</a> |
+                <a asp-action="Delete" asp-route-id="@item.receiptID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

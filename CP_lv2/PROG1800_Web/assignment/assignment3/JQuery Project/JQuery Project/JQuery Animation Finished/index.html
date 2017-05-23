@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Animation Demo</title>
+		<style>
+		div {
+			position: absolute;
+			background-color: #abc;
+			left: 50px;
+			width: 90px;
+			height: 90px;
+			margin: 5px;
+		}
+		</style>
+		<script src="jquery-2.2.0.min.js"></script>
+	</head>
+	<body>
+		<!-- buttons and image -->
+		<button id="left">&laquo;</button>
+		<button id="right">&raquo;</button>
+		<div class="block"><img src="image.jpg"></div>
+ 
+		<script>
+			//Move to the right
+			$( "#right" ).click(function() {
+				$( ".block" ).animate({ "left": "+=50px" }, "slow" );
+			});
+			//Move to the left
+			$( "#left" ).click(function(){
+				$( ".block" ).animate({ "left": "-=50px" }, "slow" );
+			});
+		</script>
+	</body>
+</html>

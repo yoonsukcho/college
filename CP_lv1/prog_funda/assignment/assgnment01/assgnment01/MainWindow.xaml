@@ -1,0 +1,14 @@
+﻿<Window x:Class="assgnment01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Yoonsuk Cho Assignment 1 Part 2" Height="350" Width="525" HorizontalAlignment="Center">
+    <Grid Margin="0,0,2,-2">
+        <Button x:Name="btnName" Content="Name" HorizontalAlignment="Left" Margin="48,87,0,0" VerticalAlignment="Top" Width="90" Click="btnName_Click"/>
+        <Button x:Name="btnEmail" Content="Email" HorizontalAlignment="Left" Margin="161,87,0,0" VerticalAlignment="Top" Width="90" Click="btnEmail_Click"/>
+        <Button x:Name="btnProgram" Content="Program" HorizontalAlignment="Left" Margin="270,87,0,0" VerticalAlignment="Top" Width="90" Click="btnProgram_Click"/>
+        <Button x:Name="btnSkillLevel" Content="Skill Level" HorizontalAlignment="Left" Margin="380,87,0,0" VerticalAlignment="Top" Width="90" Click="btnSkillLevel_Click"/>
+        <Label x:Name="lblOutput" Content="Output" HorizontalAlignment="Left" Height="27" Margin="217,167,0,0" VerticalAlignment="Top" Width="94" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="txtResult" HorizontalAlignment="Left" Height="24" Margin="136,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="252" BorderBrush="#FFB0B0B0" Background="White"/>
+
+    </Grid>
+</Window>

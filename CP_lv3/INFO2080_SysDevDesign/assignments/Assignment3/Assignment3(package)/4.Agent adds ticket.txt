@@ -1,0 +1,79 @@
+' Agent adds ticket.txt
+' PlantUML script to create a system sequence diagram
+'
+' Revision History:
+'     Jong Woon Kim, 2016.10.07: Created
+
+@startuml
+
+autonumber
+
+
+actor Agent
+participant ticketForm <<boundary>>
+participant ticketController <<control>>
+participant ticket <<entity>>
+participant type <<enumeration>>
+participant status <<enumeration>>
+participant requestMode <<enumeration>>
+participant impact <<enumeration>>
+participant urgency <<enumeration>>
+participant ticketDataAccess <<data access>>
+database ITSD
+
+title Agent adds ticket
+
+Agent -> ticketForm : initiateTicketForm
+
+ticketForm -> ticketController : addTicketForm
+
+ticketController -> ticket : createTicket
+
+ticketController <-> ticketDataAccess : retrieveTicketList
+note right : Retrieve from the ITSD database
+
+ticketController <-> type : retrieveTypeList
+
+ticketController <-> status : retrieveStatusList
+
+ticketController <-> requestMode : retrieveRequestModerList
+
+ticketController <-> impact : retrieveImpactList
+
+ticketController <-> urgency : retrieveUrgencyList
+
+activate ticket
+
+ticketController -> ticketForm : displayTicketList
+
+Agent -> ticketForm : enterTicketInformation
+
+ticketForm -> ticketController : enterTicketInformation
+
+alt ticket is incident
+
+ref over ticketController, ticket: Add Incident Ticket
+
+else ticket is change
+
+ref over ticketController, ticket: Add Change Ticket
+
+else ticket is problem
+
+ref over ticketController, ticket: Add Problem Ticket
+
+else ticket is serviceRequest
+
+ref over ticketController, ticket: Add ServiceReqeust Ticket
+
+end
+
+ticketController <-> ticket: generateTicketNumber
+
+ticketController -> ticketDataAccess: saveTicketInformation
+
+ticketDataAccess -> ITSD : insertTicket
+
+Agent -> ticketForm : terminate addTicket
+
+@enduml

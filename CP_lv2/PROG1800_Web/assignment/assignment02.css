@@ -1,0 +1,78 @@
+/* CSS file for assignment 2, Yoonsuk Cho #7135551 */
+
+
+html {
+	background-color: rgb(51, 51, 51);
+	color: #FFF;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300; 
+	font-size: 14px;
+}
+
+form {
+	margin: 10px auto; 
+	width: 800px;	
+}
+
+h2 {
+	text-align: center;
+}
+
+#testBtn {
+	width: 100px;
+	text-align: center;
+	margin: 10px auto; 
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background-color: rgb(98, 98, 98);
+
+}
+#testBtn:hover { 
+    background-color: yellow;
+    background-color: rgb(78, 78, 78);
+    cursor: pointer;
+}
+
+input[type=text] {
+	width: 225px;
+}
+
+#Email {
+	width: 325px;
+}
+
+sup {
+	color: red;
+}
+
+#Height, #Weight {
+	text-align: right;
+	width: 70px;
+}
+
+#PostalCode {
+	width: 60px;
+}
+
+table {
+	margin: 20px auto; 
+	/*border: 1px solid #ddd;*/
+	width: 600px;
+}
+
+table td {
+	/*border: 1px solid #ddd;*/
+	background-color: rgb(78, 78, 78);
+}
+
+td:nth-of-type(1) {
+	width: 200px;
+	font-weight: 300; 
+	padding: 7px 15px 7px 7px;
+}
+
+td:nth-of-type(2) {
+	padding-left: 10px;
+}
+
+

@@ -1,0 +1,87 @@
+@model WebUI.Models.Customers
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<form asp-action="Edit">
+    <div class="form-horizontal">
+        <h4>Customers</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="customerID" />
+
+        <div class="form-group">
+            <label asp-for="custFName" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="custFName" class="form-control" />
+                <span asp-validation-for="custFName" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="custLName" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="custLName" class="form-control" />
+                <span asp-validation-for="custLName" class="text-danger" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="CustEmail" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="CustEmail" class="form-control" />
+                <span asp-validation-for="CustEmail" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="custAddress" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="custAddress" class="form-control" />
+                <span asp-validation-for="custAddress" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="custCity" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="custCity" class="form-control" />
+                <span asp-validation-for="custCity" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="custPhone" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="custPhone" class="form-control" />
+                <span asp-validation-for="custPhone" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="custState" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="custState" class="form-control" />
+                <span asp-validation-for="custState" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="custZip" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="custZip" class="form-control" />
+                <span asp-validation-for="custZip" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-info" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

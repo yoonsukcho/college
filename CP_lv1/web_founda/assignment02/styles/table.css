@@ -1,0 +1,52 @@
+
+/* Section */
+section {
+	height: 550px;
+}
+
+section figcaption {
+	font-weight: 700;
+	font-size: 150%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+section table {
+	width: 500px;
+	margin-left: 30px;
+	margin-top: 15px;
+}
+
+section table caption {
+	text-align: right;
+	margin-bottom: 5px;
+	font-weight: 400;
+}
+
+section table thead {
+	height:28pt;
+	font-size: 110%;
+	margin-top: 5px;
+	background-color: rgba(145, 145, 145, 0.4);
+}
+
+section table td {
+	width: 89.6pt;
+	border: solid 0px;
+	padding: 6px 6px 6px 6px;
+	height:25px;
+}
+
+section table td p.MsoNormal {
+	text-align: right;
+}
+
+section table tfoot {
+	font-size: 90%;
+	margin-top: 5px;
+	font-weight: 500;
+	text-align: right;
+	background-color: rgba(145, 145, 145, 0.4);
+}
+
+

@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Agent Adds Requester</title>
+
+  <!-- @briefRadioButton = [False] -->
+  <!-- @casualRadioButton = [False] -->
+  <!-- @fullyDressedRadioButton = [True] -->
+  <!-- @useCaseNumber = [3] -->
+  <!-- @subject [Agent] -->
+  <!-- @verb [Adds] -->
+  <!-- @_object [Requester] -->
+  <!-- @primaryActor = [Agent] -->
+  <!-- @scope = [ITSD] -->
+  <!-- @level = [User Goal] -->
+  <!-- @description = [The agent manages the information about employees who work directly for the service desk (service desk agents) and other IT employees who assist the service desk when tickets are escalated] -->
+  <!-- @preconditions = [The agent must have permission to access the step to add employees] -->
+  <!-- @minimal = [The basic information of requester does not create] -->
+  <!-- @success = [The basic information of requester creates] -->
+  <!-- @main = [1. The agent opens the add an information of employee<br/>2. The system displays an input form<br/>3. The agent enters the first, middle, and last name of employee seperately<br/>4. The agent enters the employee's position, department, and location<br/>5. The agent enters the 7 digits employee number which is created by  the Human Resources department when an employee is hired<br/>6. The agent enters work email address, private email address, work phone number( + extension number), personal phone number and mailing address<br/>7. The agent enters employee type, employee status, birth date, hire date and termination date<br/>8. The values for employee type are co-op(C), full-time(F), part-time(P) and temporary(T)<br/>9. The values for employee status are active(A), on leave(L) and retired(R)<br/>10. The agent enters service tier and the team or teams the employee is on. Each IT employee will be on at least one specialist team<br/>11. The service tier is as follows<br/>        1 Service Desk Function, 2 Technical Management Function, 3 Application Management Function, 4 Third Party Suppliers<br/>12. The service desk positions are as follows<br/>        7 Junior Service Desk Agent, 8 Service Desk Agent, 9 Senior Service Desk Agent, 10 Service Desk Supervisor, 11 Network Administrator, 12 Database Administrator, 13 Web Administrator, 14 Telecom Specialist, 15 Hardware Specialist, 16 Senior Computer Technician, 17 Computer Technician, 18 Project Coordinator, 19 Systems Analyst, 20 Senior Programmer Analyst, 21 Programmer Analyst, 22 Programmer<br/>13. The service teams are as follows<br/>        1 Incident Management Team, 2 Capacity Management Team, 3 Change Management Team, 4 Database Management Team, 5 Hardware Management Team, 6 Major Incident Management Team, 7 Problem Management Team, 8 Release Management Team, 9 Service Design Team, 10 Service Request Fulfilment Team, 11 Supplier Management Team<br/>14. The agent enters the employee role and scope<br/>15. The roles are as follows<br/>        1 Account Admin, 2 Admin, 3 SD Supervisor, 4 SD Agent, 5 Problem Manager, 6 Change Manager, 7 Release Manager, 8 Configuration Manager<br/>16. The scopes are as follows<br/>        1 Restricted Access, 2 Global access, 3 Team Access<br/>17. The agent can enter the notes about the employee and the name of an image file with a picture of the employee optionally<br/>18.] -->
+  <!-- @alternate = [] -->
+  <!-- @relatedInformation = [] -->
+
+<style>
+table.useCaseTable
+{
+    margin-left:auto;
+    margin-right:auto;
+    border:1px solid black;
+    border-spacing:0px; 
+    border-collapse:collapse;    
+    padding:5px; 
+    text-align:left;
+    width:910px;
+}
+
+td.useCaseLeftCell
+{
+    border:1px solid black;
+    border-spacing:0px;  
+    border-collapse:collapse;     
+    padding:5px; 
+    text-align:left;
+    width:200px;
+    vertical-align:top;
+}
+
+td.useCaseRightCell
+{
+    border:1px solid black;
+    border-spacing:0px;  
+    border-collapse:collapse;     
+    padding:5px; 
+    text-align:left;
+    vertical-align:top;
+}
+</style>
+
+</head>
+<body>
+  <table class="useCaseTable">
+  
+    <tr>
+      <td class="useCaseLeftCell">
+        Use Case 3
+      </td>
+      <td class="useCaseRightCell">
+        Agent Adds Requester
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="useCaseLeftCell">
+        Primary Actor
+      </td>
+      <td class="useCaseRightCell">
+        Agent
+      </td>   
+    </tr>
+    
+    <tr>
+      <td class="useCaseLeftCell">
+        Scope
+      </td>
+      <td class="useCaseRightCell">
+        ITSD
+      </td>      
+    </tr>     
+    
+    <tr>
+      <td class="useCaseLeftCell">
+        Level
+      </td>
+      <td class="useCaseRightCell">
+        User Goal
+      </td>      
+    </tr>   
+  
+    <tr>
+      <td class="useCaseLeftCell">
+        Description
+      </td>
+      <td class="useCaseRightCell">
+        The agent manages the information about employees who work directly for the service desk (service desk agents) and other IT employees who assist the service desk when tickets are escalated
+      </td>      
+    </tr>
+ 
+    <tr>
+      <td class="useCaseLeftCell">
+        Precondition(s)
+      </td>
+      <td class="useCaseRightCell">
+        The agent must have permission to access the step to add employees
+      </td>      
+    </tr>
+    
+    <tr>
+      <td class="useCaseLeftCell">
+        Minimal Guarantee(s)
+      </td>
+      <td class="useCaseRightCell">
+        The basic information of requester does not create
+      </td>      
+    </tr>    
+    
+    <tr>
+      <td class="useCaseLeftCell">
+        Success Guarantee(s)
+      </td>
+      <td class="useCaseRightCell">
+        The basic information of requester creates
+      </td>      
+    </tr>  
+
+    <tr>
+      <td class="useCaseLeftCell">
+        Main Success Scenario/Flow
+      </td>
+      <td class="useCaseRightCell">
+        1. The agent opens the add an information of employee<br/>2. The system displays an input form<br/>3. The agent enters the first, middle, and last name of employee seperately<br/>4. The agent enters the employee's position, department, and location<br/>5. The agent enters the 7 digits employee number which is created by  the Human Resources department when an employee is hired<br/>6. The agent enters work email address, private email address, work phone number( + extension number), personal phone number and mailing address<br/>7. The agent enters employee type, employee status, birth date, hire date and termination date<br/>8. The values for employee type are co-op(C), full-time(F), part-time(P) and temporary(T)<br/>9. The values for employee status are active(A), on leave(L) and retired(R)<br/>10. The agent enters service tier and the team or teams the employee is on. Each IT employee will be on at least one specialist team<br/>11. The service tier is as follows<br/>        1 Service Desk Function, 2 Technical Management Function, 3 Application Management Function, 4 Third Party Suppliers<br/>12. The service desk positions are as follows<br/>        7 Junior Service Desk Agent, 8 Service Desk Agent, 9 Senior Service Desk Agent, 10 Service Desk Supervisor, 11 Network Administrator, 12 Database Administrator, 13 Web Administrator, 14 Telecom Specialist, 15 Hardware Specialist, 16 Senior Computer Technician, 17 Computer Technician, 18 Project Coordinator, 19 Systems Analyst, 20 Senior Programmer Analyst, 21 Programmer Analyst, 22 Programmer<br/>13. The service teams are as follows<br/>        1 Incident Management Team, 2 Capacity Management Team, 3 Change Management Team, 4 Database Management Team, 5 Hardware Management Team, 6 Major Incident Management Team, 7 Problem Management Team, 8 Release Management Team, 9 Service Design Team, 10 Service Request Fulfilment Team, 11 Supplier Management Team<br/>14. The agent enters the employee role and scope<br/>15. The roles are as follows<br/>        1 Account Admin, 2 Admin, 3 SD Supervisor, 4 SD Agent, 5 Problem Manager, 6 Change Manager, 7 Release Manager, 8 Configuration Manager<br/>16. The scopes are as follows<br/>        1 Restricted Access, 2 Global access, 3 Team Access<br/>17. The agent can enter the notes about the employee and the name of an image file with a picture of the employee optionally<br/>18.
+      </td>      
+    </tr>    
+
+    <tr>
+      <td class="useCaseLeftCell">
+        Extensions / Alternate Flows
+      </td>
+      <td class="useCaseRightCell">
+        
+      </td>      
+    </tr> 
+   
+
+    <tr>
+      <td class="useCaseLeftCell">
+        Related Information
+      </td>
+      <td class="useCaseRightCell">
+        
+      </td>      
+    </tr> 
+   
+  </table>
+</body>
+</html>
